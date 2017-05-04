@@ -1,0 +1,53 @@
+get help
+quit
+exit
+search exploit
+search exploits
+tell what exploits are available
+find exploit
+find exploits
+find what exploits are available
+search for an exploit
+find an exploit
+select an exploit
+select the exploit
+specify exploit
+specify an exploit
+specify the exploit
+specify payload
+specify a payload
+specify the payload
+set a payload
+set the payload
+pick a payload
+pick the payload
+select a payload
+select the payload
+view module options
+view a modules options
+see what options a module has
+view what options a module has
+show module options
+show a modules options
+get module options
+get a modules options
+find out what options a module has
+display the modules options
+display module options
+display a modules options
+module options
+find module options
+find options
+determine what options are available
+start exploiting
+begin exploiting
+start the exploit
+start the hack
+begin the exploit
+initiate the exploit
+initiate an exploit
+begin an exploit
+start an exploit
+meterpreter
+MSF venom
+set params

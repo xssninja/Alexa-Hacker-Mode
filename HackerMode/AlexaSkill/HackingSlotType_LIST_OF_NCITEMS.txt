@@ -1,0 +1,41 @@
+shell
+transfer file
+proxy
+connect
+client
+simple client
+listener
+file push
+file pull
+file pusher
+file puller
+file sender
+file retriever
+push a file
+pull a file
+send a file
+get a file
+retrieve a file
+upload a file
+download a file
+make a port scanner
+start a port scan
+create a port scanner
+do a port scan
+options
+command options
+command line options
+flags
+command flags
+port scan
+banner grabber
+listening back door shell linux
+listening back door shell Windows
+reverse back door shell linux
+reverse back door shell Windows
+back door shell linux
+back door shell Windows
+back door shell on linux
+back door shell on Windows
+reverse back door shell on linux
+reverse back door shell on Windows

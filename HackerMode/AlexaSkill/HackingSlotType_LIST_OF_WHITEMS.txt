@@ -1,0 +1,70 @@
+all
+Accept
+Accept-Charset
+Accept-Encoding
+Accept-Language
+Accept-Ranges
+Access-Control-Allow-Credentials
+Access-Control-Allow-Headers
+Access-Control-Allow-Methods
+Access-Control-Allow-Origin
+Access-Control-Expose-Headers
+Access-Control-Max-Age
+Access-Control-Request-Headers
+Access-Control-Request-Method
+Age
+Cache-Control
+Connection
+Content-Disposition
+Content-Encoding
+Content-Language
+Content-Length
+Content-Location
+Content-Security-Policy
+Content-Security-Policy-Report-Only
+Content-Type
+Cookie
+Cookie2
+DNT
+Date
+ETag
+Expires
+From
+Host
+If Match
+If Modified Since
+If None Match
+If Range
+If Unmodified-Since
+Keep Alive
+Last Modified
+Location
+Origin
+Pragma
+Public Key Pins
+Public Key Pins Report Only
+Referer
+Referrer Policy
+Retry After
+Server
+Set Cookie
+Set Cookie 2
+Strict Transport Security
+TE
+Tk
+Trailer
+Transfer Encoding
+Upgrade Insecure Requests
+User Agent
+Vary
+Via
+Warning
+X Content Type Options
+Content Type Options
+X D N S Prefetch Control
+D N S Prefetch
+X Frame Options
+X X S S Protection
+Cross site scripting protection
+Cross site scripting
+X S S
