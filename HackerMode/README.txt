@@ -77,7 +77,11 @@ When you start your Alexa it will pick up the list of skills from your account o
 
 To shed more light on this: If you want Alexa to be able to answer the question "who's the greatest {talent} of all time?" you would break that down into an INTENT called: "TheGreatest"
 You'd create a list of things to fill in the blank with ... like: hockey player, hacker, singer
+<<<<<<< HEAD
 You'd create a set of sample utterances that look basically like: Who is the greatest {talent_list} of all time, or Who's the best {talent_list}, or Who is the most epic {talent_list} of all time.  Once you have those lists, you can drop them into your Alexa Skill configuration. Then you'd tailor your Lambda expression code to match the {talent_list} named items like: hacker, singer, hockey player to your list of responses in your lambda's JavaScript code.  In Hacker Mode I use a “database” built out of JSON objects and I have a row named for each possible option that includes a speech response and sometimes even also includes a text response.
+=======
+You'd create a set of sample utterances that look basically like: Who is the greatest {talent_list} of all time, or Who's the best {talent_list}, or Who is the most epic {talent_list} of all time.  Once you have those lists, you can drop them into your Alexa Skill configuration. Then you'd tailor your Lambda expression code to match the {talent_list} named items like: hacker, singer, hockey player to your list of responses in your lambda's JavaScript code.  In this case I do it with a database built out of JSON objects and I have a row named for each possible option that includes a speech response and sometimes even also includes a text response.
+>>>>>>> origin/master
 
 Anyway, peek through the code and it will start making sense.  It really comes together once you've set up one of Amazon's provided demo projects like Favorite Color.
 
@@ -85,7 +89,11 @@ Anyway, peek through the code and it will start making sense.  It really comes t
 Further in Depth\
 ======================================================================================================
 
+<<<<<<< HEAD
 The heart of the Lambda expression is basically a program inside of a JSON object. Which is weird but bear with me. (We live in a JavaScript world) JSON, for those that aren't familiar is a basically a less wordy version of XML. And as such, it can hold data in various forms.
+=======
+The heart of the Lambda expression is basically a program inside of a JSON object. Which is weird but bear with me. (We live in a JavaScript world)  JSON, for those that aren't familiar is a basically a less wordy version of XML. And as such, it can hold data in various forms.
+>>>>>>> origin/master
 
 The goal of the Lambda expression is to provide a means of accessing your answer data that Alexa will speak back, and to trip a function of the program or a "handler" to handle a specific INTENT type. So, going back to the example of the "TheGreatest" intent example, you'd have a function in Javascript within the Lambda expression that is tagged with that intent name. As the Lambda interpreter loads your expression and tries to match what is being asked with possible responses it sees there's a match and fires the logic of your function to respond to the incoming INTENT type and ITEM type. In this case INTENT is "TheGreatest" and ITEM is "hockey player". Your Lambda expression function will then look up in a data structure the answer for that query which is "Wayne Gretzky".
 
