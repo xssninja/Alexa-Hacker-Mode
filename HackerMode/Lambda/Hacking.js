@@ -267,9 +267,11 @@ const nmap = { "NMAP_EN_US" : {
 	"scan with a set of scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 	"scan with related scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 	"use a set of scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
+	"use a set of n. s. e. scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 	"use a set of nse scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 	"use related scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 	"use related nse scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
+	"use related n. s. e. scripts": {"speech" : "n map space dash s upper-case v space dash dash script = S M B star space 192.168.1.1", "card" : "nmap -sV --script=smb* 192.168.1.1"},
 // save
 	"save output to a file": {"speech" : "n map space dash o upper-case N space outputfile.txt space 192.168.1.1", "card" : "nmap -oN outputfile.txt 192.168.1.1"},
 	"save scan output to a file": {"speech" : "n map space dash o upper-case N space outputfile.txt space 192.168.1.1", "card" : "nmap -oN outputfile.txt 192.168.1.1"},
@@ -298,6 +300,8 @@ const nmap = { "NMAP_EN_US" : {
 	"save scan results to xml": {"speech" : "n map space dash o upper-case X space outfile.xml space 192.168.1.1", "card" : "nmap -oX outputfile.xml 192.168.1.1"},
 	"save scan results in all formats": {"speech" : "n map space dash o upper-case A space outfile.xml space 192.168.1.1", "card" : "nmap -oA outputfile 192.168.1.1"},
 	// detect OS fingerprint
+	"detect operating system and services": {"speech" : "n map space dash upper-case A space 192.168.1.1", "card" : "nmap -A 192.168.1.1"},
+	"detect operating system": {"speech" : "n map space dash upper-case A space 192.168.1.1", "card" : "nmap -A 192.168.1.1"},
 	"detect OS and services": {"speech" : "n map space dash upper-case A space 192.168.1.1", "card" : "nmap -A 192.168.1.1"},
 	"OS fingerprint scan": {"speech" : "n map space dash upper-case A space 192.168.1.1", "card" : "nmap -A 192.168.1.1"},
 	"OS and service fingerprint scan": {"speech" : "n map space dash upper-case A space 192.168.1.1", "card" : "nmap -A 192.168.1.1"},
@@ -484,6 +488,8 @@ const metasploit = { "METASPLOIT_EN_US": {
 	"start an exploit": {"speech" : "At the MSF console prompt enter exploit.","card" : "Example of show module options \\ msf> exploit"},
 	"meterpreter": {"speech" : "Meterpreter is a metasploit payload that runs as a DLL in a process on the target machine. It has many options for pillaging and pivoting.","card" : "Meterpreter is a metasploit payload that runs as a DLL in a process on the target machine. It has many options for pillaging and pivoting."},
 	"msf venom": {"speech" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection.","card" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection."},	
+	"m. s. f. venom": {"speech" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection.","card" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection."},	
+	"venom": {"speech" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection.","card" : "MSF Venom is a component of Metasploit that helps create stand-alone payloads in raw shell code or script or executable. Venom can encode the payload to help avoid detection."},	
 	"set params" : {"speech" : "At the MSF console prompt enter set followed by a space then the name of the option followed by a space and then the value you wish to set.", "card" : "msf> set optionname value"}
 } };
 
@@ -551,85 +557,102 @@ const httpverbs = { "HTTPVERBS_EN_US": {
 	"b move" : "B move is a web-dav verb that performs a move on a resource but must include a request body. The request body contains an XML target element.",
 	"b prop find" : "B prop find is a web-dav verb that finds a property of a resource but includes a request body. The request body contains an XML target element.",
 	"b prop patch" : "B prop patch is a web-dav verb that updates a resource. It requires a request body which contains an XML target element.",
+	"b. copy" : "B copy is a web-dav verb that performs a copy on a resource but must have a request body. It requires an XML target element.",
+	"b. move" : "B move is a web-dav verb that performs a move on a resource but must include a request body. The request body contains an XML target element.",
+	"b. prop find" : "B prop find is a web-dav verb that finds a property of a resource but includes a request body. The request body contains an XML target element.",
+	"b. prop patch" : "B prop patch is a web-dav verb that updates a resource. It requires a request body which contains an XML target element.",
 	"copy" : "The copy web-dav verb creates a copy of an object. It can apply to a single resource or to all children of the resource given a depth header value.",
 	"b delete" : "The delete web-dav verb deletes a copy of an object. It can have a depth header set for deleting child objects as well.",
+	"b. delete" : "The delete web-dav verb deletes a copy of an object. It can have a depth header set for deleting child objects as well.",
 	"lock" : "The lock web-dav verb performs a write-lock on a resource. It can have a depth header set to apply to child objects as well.",
 	"m k col" : "The M K col web-dav verb creates a new collection at the resource location.",
+	"m. k. col" : "The M K col web-dav verb creates a new collection at the resource location.",
 	"move" : "The move web-dav verb moves a resource. It may have a depth header set to indicate if child items are moved as well.",
 	"poll" : "The poll web-dav verb can be used to determine if a client has recieved an event notification or query for what events have fired.",
 	"search" : "The search web-dav verb is used to search a Microsoft exchange store for a resource.",
 	"subscribe" : "The subscribe web-dav verb is used to create a subscription to a resource.",
 	"unlock" : "The unlock web-dav verb is used to unlock a resource at the request URI that is locked.",
 	"unsubscribe" : "The unsubscribe web-dae verb is used to end a subscription to a resource.",
-	"x ms enum atts" : "The x M S enum atts method is used to enumerate email attachment properties in an outlook web."
+	"x ms enum atts" : "The x M S enum atts method is used to enumerate email attachment properties in an outlook web.",
+	"x. m. s. enum atts" : "The x M S enum atts method is used to enumerate email attachment properties in an outlook web."
 	} };
 	
 const webheaders = { "WEBHEADERS_EN_US": {
 	"all": "Request headers and response headers. There are headers to prevent xss, cross origin requests and other security features. Some headers have to do with the referer and information about the user-agent. Unfortunately, a complete list would take too long to read.",
 	"accept" : "The accept request header notifies the server of what mime types the browser supports.",
-	"accept-charset" : "The accept-char set request header notifies the server what character sets the browser understands.",
-	"accept-encoding" : "The accept-encoding request header tells the server which encodings and compression the browser will accept, like G zip, deflate etcetera.",
-	"accept-language" : "The accept-language request header advertises which languages the browser is able to understand.",
-	"accept-ranges" : "The accept-ranges response header is used by the server to tell the browser if it will accept partial requests.",
-	"access-control-allow-credentials" : "The access-control-allow-credentials response header indicates whether or not the response to the request can be written to the page. It can be used if the returned value is true. This header can be used in pre-flight requests to validate whether credentials can be used as part of an XHR request.",
-	"access-control-allow-headers" : "The access-control-allow-credentials header is a response header which is used in pre-flight requests to determine which HTTP headers will be available via the Access-control-expose-headers header when making the XHR request.",
-	"access-control-allow-methods" : "The access-control-allow-methods header is a response header which indicates what methods are allowed when fetching the resource in the response to a preflight request.",
-	"access-control-allow-origin" : "The access-control-allow-origin header is a response header which tells the browser whether the response can be shared with resources with the given origin.",
-	"access-control-expose-headers" : "The access-control-expose-headers response header lets the requestor know which headers can be exposed as part of the response by listing them for the browser.",
-	"access-control-max-age" : "The access-control-max-age header is a response header that tells the browser how long the results of a pre-flight request can be cached.",
-	"access-control-request-headers" : "The access-control-request-headers is a request header that is used when making a pre-flight request to notify the server which HTTP headers will be used during the XHR request.",
-	"access-control-request-method" : "The access-control-request-method header is a request header that is used when making pre-flight requests to notify the server which HTTP method will be used when making the request. This header is required because the pre-flight check uses the options verb and does not use the same method as the final request.",
+	"accept charset" : "The accept-char set request header notifies the server what character sets the browser understands.",
+	"accept encoding" : "The accept-encoding request header tells the server which encodings and compression the browser will accept, like G zip, deflate etcetera.",
+	"accept language" : "The accept-language request header advertises which languages the browser is able to understand.",
+	"accept ranges" : "The accept-ranges response header is used by the server to tell the browser if it will accept partial requests.",
+	"access control-allow-credentials" : "The access-control-allow-credentials response header indicates whether or not the response to the request can be written to the page. It can be used if the returned value is true. This header can be used in pre-flight requests to validate whether credentials can be used as part of an XHR request.",
+	"access control-allow-headers" : "The access-control-allow-credentials header is a response header which is used in pre-flight requests to determine which HTTP headers will be available via the Access-control-expose-headers header when making the XHR request.",
+	"access control-allow-methods" : "The access-control-allow-methods header is a response header which indicates what methods are allowed when fetching the resource in the response to a preflight request.",
+	"access control-allow-origin" : "The access-control-allow-origin header is a response header which tells the browser whether the response can be shared with resources with the given origin.",
+	"access control-expose-headers" : "The access-control-expose-headers response header lets the requestor know which headers can be exposed as part of the response by listing them for the browser.",
+	"access control-max-age" : "The access-control-max-age header is a response header that tells the browser how long the results of a pre-flight request can be cached.",
+	"access control-request-headers" : "The access-control-request-headers is a request header that is used when making a pre-flight request to notify the server which HTTP headers will be used during the XHR request.",
+	"access control-request-method" : "The access-control-request-method header is a request header that is used when making pre-flight requests to notify the server which HTTP method will be used when making the request. This header is required because the pre-flight check uses the options verb and does not use the same method as the final request.",
 	"age" : "The age header contains the time in seconds that the item has been cached.",
 	"cache-control" : "The cache-control header is a general header that specifies cache options for either requests and responses but both client and server are required to provide this header as needed.",
 	"connection" : "The connection is a general header that specifies whether the network connection stays open after the current transaction finishes. If the value is keep-alive then the connection is persistent. Subsequent headers used in the following requests must be specified in the connection header so a proxy knows it needs to consume them and not pass them on.",
-	"content-disposition" : "The content-disposition response header indicates whether the content should be displayed in-line in the browser. In a multi-part form data body the HTTP content disposition general header can be used on a part of the multi-part body to give added information to that data segment. Sub-parts are delimited by boundary delimiters.",
-	"content-encoding" : "The content-encoding header is an entity header that specifies compression of the media-type. It can tell the client how to decode in order to obtain the media type specified by the content-type header.",
-	"content-language" : "The content-language header is an entity header that describes the languages to be consumed by the client. If no content language header is included then the content is assumed to be for all languages.",
-	"content-length" : "The content-length header is an entity header that specifes the size of the entity body in a decimal number of octets and is intended to be evaluated by the recipient.",
-	"content-location" : "The content-location header tells the browser of an alternate location for the data. Content-Location usually returns the direct URL of the resource being transmitted during content negotiation.",
-	"content-security-policy" : "The content-security-policy header is a response header that provides a means for controlling what content sources and domains are allowed to serve trusted site content. It also can control cross site script and many other security related settings which can be tailored to specific needs and to allow specific functions to be provided by trusted domains.",
-	"content-security-policy-Report-Only" : "The conent-security-policy-report-only header will allow a web site developer to test but not enforce aspects of policy that will later be used in the Content Security Policy header. Activities that would be blocked are reported.",
-	"content-type" : "The content-type header helps test policies by monitoring policy effects in a detect mode versus preventing the activity in question.",
+	"content disposition" : "The content-disposition response header indicates whether the content should be displayed in-line in the browser. In a multi-part form data body the HTTP content disposition general header can be used on a part of the multi-part body to give added information to that data segment. Sub-parts are delimited by boundary delimiters.",
+	"content encoding" : "The content-encoding header is an entity header that specifies compression of the media-type. It can tell the client how to decode in order to obtain the media type specified by the content-type header.",
+	"content language" : "The content-language header is an entity header that describes the languages to be consumed by the client. If no content language header is included then the content is assumed to be for all languages.",
+	"content length" : "The content-length header is an entity header that specifes the size of the entity body in a decimal number of octets and is intended to be evaluated by the recipient.",
+	"content location" : "The content-location header tells the browser of an alternate location for the data. Content-Location usually returns the direct URL of the resource being transmitted during content negotiation.",
+	"content security-policy" : "The content-security-policy header is a response header that provides a means for controlling what content sources and domains are allowed to serve trusted site content. It also can control cross site script and many other security related settings which can be tailored to specific needs and to allow specific functions to be provided by trusted domains.",
+	"content security-policy-report-only" : "The conent-security-policy-report-only header will allow a web site developer to test but not enforce aspects of policy that will later be used in the Content Security Policy header. Activities that would be blocked are reported.",
+	"content type" : "The content-type header helps test policies by monitoring policy effects in a detect mode versus preventing the activity in question.",
 	"cookie" : "The cookie header contains stored HTTP cookies that were sent by the server using the set dash cookie header.",
-	"cookie2" : "The cookie 2 header is obsolete but may be honored by some browsers for backward compatability. Most browser will ignore it and use the cookie header only.",
-	"dnt" : "The D N T header is the do not track request header, telling the server the user values privacy over usability while interacting with the site.",
+	"cookie two" : "The cookie 2 header is obsolete but may be honored by some browsers for backward compatability. Most browser will ignore it and use the cookie header only.",
+	"d n t" : "The D N T header is the do not track request header, telling the server the user values privacy over usability while interacting with the site.",
+	"d. n. t." : "The D N T header is the do not track request header, telling the server the user values privacy over usability while interacting with the site.",
 	"date" : "The date header is a general header which stores the date and time that the message was created.",
-	"etag" : "The E tag header is a response header which identifies a specific version of a requsted object by effectively being a hash value of a resource. This allows the resource to be uniquely identified and it improves cache efficiency because the server does not have to resend the whole response if the content has not changed.",
+	"e tag" : "The E tag header is a response header which identifies a specific version of a requsted object by effectively being a hash value of a resource. This allows the resource to be uniquely identified and it improves cache efficiency because the server does not have to resend the whole response if the content has not changed.",
+	"e. tag" : "The E tag header is a response header which identifies a specific version of a requsted object by effectively being a hash value of a resource. This allows the resource to be uniquely identified and it improves cache efficiency because the server does not have to resend the whole response if the content has not changed.",
 	"expires" : "The expires header provides the date and time after which the content is expired or needs to be re-fetched",
 	"from" : "The from header is composed of an email address for a user who controls the browser or user agent. If you program a bot, it should include the From header so you can be notified if the bot traffic is problematic.",
 	"host" : "The host header specifies the fully qualified domain name of the server and may include the port number the server is listening on.",
-	"if-match" : "The if-match header is a request header which returns content if the resource etag matches one specified in the request. It can be used as a version control mechanism limiting uploads that would be duplicate or it can be used with a Range header to ensure that new ranges requested come from the same resource as previously checked. If the match is invalid then a 416 is returned.",
-	"if-modified-since" : "The if-modified-since header is a request header. The server will return the resource with a 200 OK if the resource was modified last after the date specified, otherwise it returns a 304.",
-	"if-none-match" : "The if-none-match header is a request header. The server will only send back a 200 OK if none of the requested resources match the e-tags provided.",
-	"if-range" : "The if-range header is a request header that is conditional. If the condition is met the resource is returned. This can be used with e tag or last dash modified headers.",
-	"if-unmodified-since" : "The if-unmodified-since header is a request header. It will return the resource if the condition is met. If the resource is modified since the date then the server returns a 412.",
-	"keep-alive" : "The keep-alive header is a general header and is not standard. Do not use in production sites as it will not work for all users. The keep alive header tries to instruct the server on how to maintain the connection and what a maximum time-out period may be.",
-	"last-modified" : "The last-modified response header details the date and time the server resource was last modified.",
+	"if match" : "The if-match header is a request header which returns content if the resource etag matches one specified in the request. It can be used as a version control mechanism limiting uploads that would be duplicate or it can be used with a Range header to ensure that new ranges requested come from the same resource as previously checked. If the match is invalid then a 416 is returned.",
+	"if modified since" : "The if-modified-since header is a request header. The server will return the resource with a 200 OK if the resource was modified last after the date specified, otherwise it returns a 304.",
+	"if none match" : "The if-none-match header is a request header. The server will only send back a 200 OK if none of the requested resources match the e-tags provided.",
+	"if range" : "The if-range header is a request header that is conditional. If the condition is met the resource is returned. This can be used with e tag or last dash modified headers.",
+	"if unmodified since" : "The if-unmodified-since header is a request header. It will return the resource if the condition is met. If the resource is modified since the date then the server returns a 412.",
+	"keep alive" : "The keep-alive header is a general header and is not standard. Do not use in production sites as it will not work for all users. The keep alive header tries to instruct the server on how to maintain the connection and what a maximum time-out period may be.",
+	"last modified" : "The last-modified response header details the date and time the server resource was last modified.",
 	"location" : "The location header is a response header that tells the browser which page to redirect to. It is only effective when returned with a 300 to 399 range response code",
 	"origin" : "The origin request header returns the name of the server that is serving the requested content. This header is sent with POST and with CORS requests. It is similar to the referer header but does not show path information.",
 	"pragma" : "The pragma header is a general header. It is used for backward compatability with HTTP version 1 caches if cache-control headers are not specified.",
-	"public-key-pins" : "The public-key-pins header is a response header that associates a public key with a specific web server to reduce the risk of MITM attacks. If a pin DOS is attempted using fake keys, the browser should ignore the pin request.",
-	"public-key-pins-Report-Only" : "The public-key-pins-report-only response header sends a reports of pinning errors to the report URI specified in the header. This header will not enforce pinning, but only report problems with it. As such, it can be used to test pinning.",
+	"public key pins" : "The public-key-pins header is a response header that associates a public key with a specific web server to reduce the risk of MITM attacks. If a pin DOS is attempted using fake keys, the browser should ignore the pin request.",
+	"public key pins report only" : "The public-key-pins-report-only response header sends a reports of pinning errors to the report URI specified in the header. This header will not enforce pinning, but only report problems with it. As such, it can be used to test pinning.",
 	"referer" : "The referer header is a request header that specifies the address of the previoius page from which the current link was followed.",
-	"referrer-policy" : "The referer-policy header specifies which referrer information should be included in requests.",
-	"retry-after" : "The retry-after header is a response header that tells the browser how long it should wait before making a follow-up request. When sent a 503 it specifies how long the browser should wait for the unavailable resource. If send a 301, it will tell the browser the minimum time to wait before redirecting.",
+	"referrer policy" : "The referer-policy header specifies which referrer information should be included in requests.",
+	"retry after" : "The retry-after header is a response header that tells the browser how long it should wait before making a follow-up request. When sent a 503 it specifies how long the browser should wait for the unavailable resource. If send a 301, it will tell the browser the minimum time to wait before redirecting.",
 	"server" : "The server header indicates the server software type and possibly version number. The server header can tell an attacker what technologies are running and what may be vulnerable based on version numbers.",
-	"set-cookie" : "The set-cookie header is used to send cookies from the server to the browser.",
-	"set-cookie2" : "The set-cookie 2 response header has been deprecated and is not supported by modern browsers.",
-	"strict-transport-security" : "The strict transport security header is a response header that tells the browser that it should only browse the server using HTTPS rather than HTTP.",
+	"set cookie" : "The set-cookie header is used to send cookies from the server to the browser.",
+	"set cookie two" : "The set-cookie 2 response header has been deprecated and is not supported by modern browsers.",
+	"strict transport security" : "The strict transport security header is a response header that tells the browser that it should only browse the server using HTTPS rather than HTTP.",
 	"te" : "The TE header is a request header that determines the transfer encodings the browser can process. Chunked encoding is always accepted by default in modern browsers.",
-	"tk" : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation stands for under construction. Question mark stands for dynamic. G stands for gateway. N stands for no tracking. T stands for tracking. C stands for tracking with consent. P stands for potential consent. D equals disregard do not track. And U stands for updated. ",
+	"tk" : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation, question mark, G, N for no tracking. T stands for tracking. C is tracking with consent. D equals disregard do not track. etc.",
+	"t e" : "The TE header is a request header that determines the transfer encodings the browser can process. Chunked encoding is always accepted by default in modern browsers.",
+	"t k" : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation, question mark, G, N for no tracking. T stands for tracking. C is tracking with consent. D equals disregard do not track. etc.",
 	"trailer" : "The trailer header is a response header that allows for the inclusion of additional fields at the end of chuncked messages which may contain dynamically generated data appended to the message body, like CRC checks, digital signatures or post processing indicators.",
-	"transfer-encoding" : "The transfer-encoding header is similar to content dash encoding header but is specific to each discreet message. It often is returned in response to a HEAD request indicating how it would return the corresponding get request. Examples are chunked, deflate, gzip etcetera.",
-	"upgrade-insecure-requests" : "The upgrade-insecure-requests header is a request header that tells the server that the browser wants to enable encryption if possible. True equals the value of 1 in this case.",
-	"user-agent" : "The user-agent header is a request header that tells the server what kind of browser is connecting to it. User agent strings can be altered. Do not fully rely on the information provided.",
+	"transfer encoding" : "The transfer-encoding header is similar to content dash encoding header but is specific to each discreet message. It often is returned in response to a HEAD request indicating how it would return the corresponding get request. Examples are chunked, deflate, gzip etcetera.",
+	"upgrade insecure requests" : "The upgrade-insecure-requests header is a request header that tells the server that the browser wants to enable encryption if possible. True equals the value of 1 in this case.",
+	"user agent" : "The user-agent header is a request header that tells the server what kind of browser is connecting to it. User agent strings can be altered. Do not fully rely on the information provided.",
 	"vary" : "The vary response header helps decide how to match future request headers to decide whether a cached response can be used versus requesting a new copy from the server.",
 	"via" : "The via header is a general header added by proxies. It can be either in request or response headers. I helps in traffic issues and identifying the protocol options of the sending nodes that help serve and proxy the reqeusts.",
 	"warning" : "The warning header is a general header that contains information about errors or problems. Multiple warnings may be queued in the same response. For example, warn dash agent, warn dash text, warn dash date, etc.",
 	"x content type options" : "The X-content-type options response header is used to indicate mime types noted in the content type header should not be changed. This header was intended to block mime types from being changed to executable types. The no sniff setting is intended to prevent content type alteration as part of an attack.",
 	"x d n s prefetch control" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
-	"d n s prefetch " : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
+	"d n s prefetch" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
+	"xcontent type options" : "The X-content-type options response header is used to indicate mime types noted in the content type header should not be changed. This header was intended to block mime types from being changed to executable types. The no sniff setting is intended to prevent content type alteration as part of an attack.",
+	"xdns prefetch control" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
+	"dns prefetch" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
 	"x frame options" : "The X-frame-options header is intended to prevent the browser from rendering the page within an iframe to thwart iframe overlay or content replacement patterns common to watering hole attacks",
+	"xxss protection" : "The X-dash-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
+	"xxss" : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
+	"xframe options" : "The X-frame-options header is intended to prevent the browser from rendering the page within an iframe to thwart iframe overlay or content replacement patterns common to watering hole attacks",
 	"x x s s protection" : "The X-dash-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
 	"x x s s" : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
 	"cross site scripting" : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
@@ -688,6 +711,7 @@ const htmlencodings = {   "HTML_EN_US" : {
         "greater than": { "speech": "ampersand pound 62 semi-colon", "card" : "&#62;"},
         "question mark": { "speech": "ampersand pound 63 semi-colon", "card" : "&#63;"},
         "at sign": { "speech": "ampersand pound 64 semi-colon", "card" : "&#64;"},
+        "at": { "speech": "ampersand pound 64 semi-colon", "card" : "&#64;"},
         "capital a": { "speech": "ampersand pound 65 semi-colon", "card" : "&#65;"},
         "capital b": { "speech": "ampersand pound 66 semi-colon", "card" : "&#66;"},
         "capital c": { "speech": "ampersand pound 67 semi-colon", "card" : "&#67;"},
@@ -844,6 +868,7 @@ const charencodings = {   "CHAR_EN_US" : {
         "greater than": { "speech": "", "card" : "62"},
         "question mark": { "speech": "", "card" : "63"},
         "at sign": { "speech": "", "card" : "64"},
+        "at": { "speech": "", "card" : "64"},
         "capital a": { "speech": "", "card" : "65"},
         "capital b": { "speech": "", "card" : "66"},
         "capital c": { "speech": "", "card" : "67"},
@@ -859,7 +884,7 @@ const charencodings = {   "CHAR_EN_US" : {
         "capital m": { "speech": "", "card" : "77"},
         "capital n": { "speech": "", "card" : "78"},
         "capital o": { "speech": "", "card" : "79"},
-        "capital p": { "speech": "", "card" : "&80"},
+        "capital p": { "speech": "", "card" : "80"},
         "capital q": { "speech": "", "card" : "81"},
         "capital r": { "speech": "", "card" : "82"},
         "capital s": { "speech": "", "card" : "83"},
@@ -956,10 +981,12 @@ const APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
          
 const handlers = {
     'NewSession': function () {
-		var randomN = getRandomInt(0,2);
+        console.log("-NewSession");
+		var randomN = getRandomInt(0,3);
 		var welcomeMessage="Random Number is ";
-		if (randomN === 0) {welcomeMessage = this.t('WELCOME_MESSAGE')} 
-			else if (randomN === 1) {welcomeMessage = this.t('WELCOME_MESSAGE2')} 
+		if (randomN === 0) {welcomeMessage = this.t('WELCOME_MESSAGE0')} 
+			else if (randomN === 1) {welcomeMessage = this.t('WELCOME_MESSAGE1')} 
+			else if (randomN === 2) {welcomeMessage=this.t('WELCOME_MESSAGE2')}
 			else {welcomeMessage=this.t('WELCOME_MESSAGE3')}
         this.attributes.speechOutput = welcomeMessage;  //this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
         // If the user either does not reply to the welcome message or says something that is not
@@ -967,18 +994,7 @@ const handlers = {
         this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
         this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
     },      
-    'LaunchRequest': function() {
-      	var randomN = getRandomInt(0,2);
-		var welcomeMessage="Random Number is ";
-		if (randomN === 0) {welcomeMessage = this.t('WELCOME_MESSAGE')} 
-			else if (randomN === 1) {welcomeMessage = this.t('WELCOME_MESSAGE2')} 
-			else {welcomeMessage=this.t('WELCOME_MESSAGE3')}
-        this.attributes.speechOutput = welcomeMessage;  //this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
-        // If the user either does not reply to the welcome message or says something that is not
-        // understood, they will be prompted again with this text.
-        this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
-        this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);  
-    },
+
 	
 	'KnownPortsIntent': function () {
         const itemSlot = this.event.request.intent.slots.NUMItem;
@@ -986,7 +1002,7 @@ const handlers = {
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
         }      
-               
+        
         const cardTitle = this.t('PORTS_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
         const myPorts = this.t('PORTS');
         const ports = myPorts[itemName];
@@ -1003,8 +1019,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('PORTS_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('KnownPortsIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1017,9 +1033,10 @@ const handlers = {
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
+            itemName = itemName.replace(".","");
         }      
                
-        const cardTitle = this.t('WEBHEADERS_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('WEBHEADERS_DISPLAY_CARD_TITLE', itemName);
         const myWebHeaders = this.t('WEBHEADERS');
         const webheaders = myWebHeaders[itemName];
                
@@ -1035,8 +1052,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('WEBHEADERS_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('WebHeadersIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1052,7 +1069,7 @@ const handlers = {
             itemName = itemSlot.value.toLowerCase();
         }      
                
-        const cardTitle = this.t('HTTPVERBS_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('HTTPVERBS_DISPLAY_CARD_TITLE', itemName);
         const myHTTPVerbs = this.t('HTTPVERBS');
         const httpverbs = myHTTPVerbs[itemName];
                
@@ -1068,10 +1085,10 @@ const handlers = {
             } else {
                 speechOutput += this.t('HTTPVERBS_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('HTTPVerbsIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
-            this.attributes.repromptSpeech = repromptSpeech;
+                    console.log('HTTPVerbsIntent');this.attributes.repromptSpeech = repromptSpeech;
                
             this.emit(':ask', speechOutput, repromptSpeech);
         }      
@@ -1084,7 +1101,7 @@ const handlers = {
             itemName = itemSlot.value.toLowerCase();
         }      
                
-        const cardTitle = this.t('NMAP_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('NMAP_DISPLAY_CARD_TITLE', itemName);
         const myNmap = this.t('NMAP');
         const nmap = myNmap[itemName];
                
@@ -1100,8 +1117,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('NMAP_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('NmapIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1116,7 +1133,7 @@ const handlers = {
             itemName = itemSlot.value.toLowerCase();
         }      
                
-        const cardTitle = this.t('NETCAT_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('NETCAT_DISPLAY_CARD_TITLE', itemName);
         const myNetcat = this.t('NETCAT');
         const netcat = myNetcat[itemName];
                
@@ -1132,8 +1149,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('NETCAT_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('NetcatIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1148,7 +1165,7 @@ const handlers = {
             itemName = itemSlot.value.toLowerCase();
         }      
                
-        const cardTitle = this.t('METASPLOIT_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('METASPLOIT_DISPLAY_CARD_TITLE', itemName);
         const myMetasploit = this.t('METASPLOIT');
         const metasploit = myMetasploit[itemName];
                
@@ -1164,8 +1181,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('MetasploitIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1179,9 +1196,10 @@ const handlers = {
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
+            itemName = itemName.replace('.', '');
         }      
                
-        const cardTitle = this.t('HTMLENCODING_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('HTMLENCODING_DISPLAY_CARD_TITLE', itemName);
         const myHTMLEncodings = this.t('HTMLENCODINGS');
         const encoding = myHTMLEncodings[itemName];
         //this.emit(':ask',itemName + " <> " + myHTMLEncodings[1]+ myHTMLEncodings[2]+ myHTMLEncodings[3]+ myHTMLEncodings[4]);       
@@ -1197,8 +1215,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('HTMLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('HTMLEncodingIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1212,9 +1230,10 @@ const handlers = {
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
+            itemName = itemName.replace('.', '');
         }      
                
-        const cardTitle = this.t('HEXENCODING_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('HEXENCODING_DISPLAY_CARD_TITLE', itemName);
         const myEncodings = this.t('CHARENCODINGS');
         const encoding =  myEncodings[itemName];
         
@@ -1235,8 +1254,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('HEXENCODING_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+           // speechOutput += repromptSpeech;
+            console.log('HexEncodingIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1250,16 +1269,17 @@ const handlers = {
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
+            itemName = itemName.replace('.', '');
         }      
                
-        const cardTitle = this.t('ASCIIENCODING_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('ASCIIENCODING_DISPLAY_CARD_TITLE', itemName);
         const myEncodings = this.t('CHARENCODINGS');
         const encoding =  myEncodings[itemName];
                encoding.speech = encoding.card;
         if (encoding) {
             this.attributes.speechOutput = encoding; //encoding.speech;  // sub item speech
             this.attributes.repromptSpeech = this.t('ASCIIENCODING_REPEAT_MESSAGE');
-            this.emit(':askWithCard', encoding.speech , this.attributes.repromptSpeech, cardTitle, encoding.card);//encoding.card);  // sub item card
+            this.emit(':askWithCard', encoding.speech , this.attributes.repromptSpeech, cardTitle, encoding.card);
         } else {
             let speechOutput = this.t('ASCIIENCODING_NOT_FOUND_MESSAGE');
             const repromptSpeech = this.t('ASCIIENCODING_NOT_FOUND_REPROMPT');
@@ -1268,8 +1288,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('ASCIIENCODING_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            // speechOutput += repromptSpeech;
+            console.log('ASCIIEncodingIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1283,9 +1303,10 @@ const handlers = {
         let itemName;
         if (itemSlot && itemSlot.value) {
             itemName = itemSlot.value.toLowerCase();
+            itemName = itemName.replace('.', '');
         }      
                
-        const cardTitle = this.t('URLENCODING_DISPLAY_CARD_TITLE', this.t('SKILL_NAME'), itemName);
+        const cardTitle = this.t('URLENCODING_DISPLAY_CARD_TITLE', itemName);
         const myEncodings = this.t('CHARENCODINGS');
         const encoding =  myEncodings[itemName];
 		var e = Number(encoding.card).toString(16);
@@ -1295,8 +1316,8 @@ const handlers = {
         if (encoding) {
             this.attributes.speechOutput = encoding;  // sub item speech
             this.attributes.repromptSpeech = this.t('URLENCODING_REPEAT_MESSAGE');
-            this.emit(':askWithCard', encoding.speech, this.attributes.repromptSpeech, cardTitle, encoding.card);  // sub item card
-        } else {
+            this.emit(':askWithCard', encoding.speech, this.attributes.repromptSpeech, cardTitle, encoding.card); 
+            } else {
             let speechOutput = this.t('URLENCODING_NOT_FOUND_MESSAGE');
             const repromptSpeech = this.t('URLENCODING_NOT_FOUND_REPROMPT');
             if (itemName) {
@@ -1304,8 +1325,8 @@ const handlers = {
             } else {
                 speechOutput += this.t('URLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME');
             }  
-            speechOutput += repromptSpeech;
-               
+            //speechOutput += repromptSpeech;
+            console.log('URLEncodingIntent>' + itemName);
             this.attributes.speechOutput = speechOutput;
             this.attributes.repromptSpeech = repromptSpeech;
                
@@ -1345,9 +1366,10 @@ const languageStrings = {
 			METASPLOIT: metasploit.METASPLOIT_EN_US,
 			
             SKILL_NAME: 'Hacker Mode',
-            WELCOME_MESSAGE: "Now in hacker mode! Ask me about HTML, URL, hex and ASCII encoding, net-cat, N-map, web headers, HTTP verbs and Metasploit.  What can I help you with?",
-            WELCOME_MESSAGE2: "Entering hacker mode! I know HTML, hex, ASCII and URL encodings, net-cat, web headers, HTTP verbs, Metasploit and N-map.  What would you like to know?",
-            WELCOME_MESSAGE3: "I\'m a one woman hacking army! Ask me about HTML, hex, URL and ASCII encoding, net-cat, web headers, HTTP verbs, Metasploit and N-map.  Go ahead, ask me something.",
+            WELCOME_MESSAGE0: "Now in hacker mode! Ask me about HTML, URL, hex and ASCII encoding and other hackery things.",
+            WELCOME_MESSAGE1: "Entering hacker mode! I know net-cat, Metasploit and N-map.",
+            WELCOME_MESSAGE2: "I'm a one woman hacking army! Ask me about things like web headers and HTTP verbs and other leet things.",
+            WELCOME_MESSAGE3: "Activating my inner hacker. Angelina would be so jealous of my skills with encodings and hacking tools.",
 
             WELCOME_REPROMPT: 'For instructions on what you can say in Hacker Mode, please say help me. You can leave at any time by saying Stop.',
             HELP_MESSAGE: "You can ask a question like, what\'s the HTML encoding for ampersand? Or, what is the command for sending a file with netcat? I'll also send the syntax to the Alexa app and web site. Or, you can say exit or stop to quit.",
@@ -1355,74 +1377,74 @@ const languageStrings = {
             STOP_MESSAGE: 'Goodbye!',
   
 			PORTS_REPEAT_MESSAGE: 'Try saying repeat.',
-            PORTS_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            PORTS_NOT_FOUND_WITH_ITEM_NAME: 'the requested port %s is not known.',
-            PORTS_NOT_FOUND_WITHOUT_ITEM_NAME: 'The port number you asked for was not found.',
+            PORTS_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way",
+            PORTS_NOT_FOUND_WITH_ITEM_NAME: "The requested port %s is not known",
+            PORTS_NOT_FOUND_WITHOUT_ITEM_NAME: "The port number you asked for was not found",
             PORTS_NOT_FOUND_REPROMPT: 'What other port can I help find?',
 			PORTS_DISPLAY_CARD_TITLE: 'PORT %s ',
 			
 			HTMLENCODING_REPEAT_MESSAGE: 'Try saying repeat.',
-            HTMLENCODING_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            HTMLENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the HTML encoding for %s. ',
-            HTMLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that HTML encoding. ',
+            HTMLENCODING_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            HTMLENCODING_NOT_FOUND_WITH_ITEM_NAME: "I don't know the HTML encoding for %s ",
+            HTMLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that HTML encoding ",
             HTMLENCODING_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			HTMLENCODING_DISPLAY_CARD_TITLE: '%s  - The HMTL Encoding is %s.',
+			HTMLENCODING_DISPLAY_CARD_TITLE: 'The HMTL Encoding for %s',
              
 			HEXENCODING_REPEAT_MESSAGE: 'Try saying repeat.',
-            HEXENCODING_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            HEXENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the Hex encoding for %s. ',
-            HEXENCODING_NOT_FOUND_WITHOUT_ITEM_NAME: 'I don\'t know that hex encoding. ',
+            HEXENCODING_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            HEXENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the Hex encoding for %s ',
+            HEXENCODING_NOT_FOUND_WITHOUT_ITEM_NAME: "I don't know that hex encoding ",
             HEXENCODING_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			HEXENCODING_DISPLAY_CARD_TITLE: '%s  - The Hex Encoding is %s.',
+			HEXENCODING_DISPLAY_CARD_TITLE: 'The Hex Encoding for %s',
 
 			ASCIIENCODING_REPEAT_MESSAGE: 'Try saying repeat.',
-            ASCIIENCODING_NOT_FOUND_MESSAGE: "I'm sorry, I don't know ",
-            ASCIIENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the ASCII encoding for %s. ',
-            ASCIIENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that ASCII encoding. ',
+            ASCIIENCODING_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            ASCIIENCODING_NOT_FOUND_WITH_ITEM_NAME: "I don't know the ASCII encoding for %s ",
+            ASCIIENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that ASCII encoding ",
             ASCIIENCODING_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			ASCIIENCODING_DISPLAY_CARD_TITLE: '%s  - The ASCII Encoding is %s.',
+			ASCIIENCODING_DISPLAY_CARD_TITLE: 'The ASCII Encoding for %s',
 
  			URLENCODING_REPEAT_MESSAGE: 'Try saying repeat.',
-            URLENCODING_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            URLENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the URL encoding for %s. ',
-            URLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that URL encoding. ',
+            URLENCODING_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know, try asking in a different way",
+            URLENCODING_NOT_FOUND_WITH_ITEM_NAME: 'the URL encoding for %s ',
+            URLENCODING_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that URL encoding',
             URLENCODING_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			URLENCODING_DISPLAY_CARD_TITLE: '%s  - The URL Encoding is %s.',
+			URLENCODING_DISPLAY_CARD_TITLE: 'The URL Encoding for %s',
 			
 			WEBHEADERS_REPEAT_MESSAGE: 'Try saying repeat.',
-            WEBHEADERS_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            WEBHEADERS_NOT_FOUND_WITH_ITEM_NAME: 'the web header relating to %s. ',
-            WEBHEADERS_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that web header.',
-            WEBHEADERS_NOT_FOUND_REPROMPT: 'What else can I help with?',
-            WEBHEADERS_DISPLAY_CARD_TITLE: '%s  - The web header is %s.',
+            WEBHEADERS_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            WEBHEADERS_NOT_FOUND_WITH_ITEM_NAME: "I can't find the web header %s ",
+            WEBHEADERS_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that web header ",
+            WEBHEADERS_NOT_FOUND_REPROMPT: 'What else can I help with? ',
+            WEBHEADERS_DISPLAY_CARD_TITLE: 'The web header matching %s is',
 			
 			HTTPVERBS_REPEAT_MESSAGE: 'Try saying repeat.',
-            HTTPVERBS_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            HTTPVERBS_NOT_FOUND_WITH_ITEM_NAME: 'the HTTP verb for %s. ',
-            HTTPVERBS_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that HTTP verb. ',
+            HTTPVERBS_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way",
+            HTTPVERBS_NOT_FOUND_WITH_ITEM_NAME: "I can't find the HTTP verb for %s ",
+            HTTPVERBS_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that HTTP verb ",
             HTTPVERBS_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			HTTPVERBS_DISPLAY_CARD_TITLE: '%s  - The HTTP Verb - %s.',
+			HTTPVERBS_DISPLAY_CARD_TITLE: 'The HTTP Verb matching %s',
 			
 			NMAP_REPEAT_MESSAGE: 'Try saying repeat.',
-            NMAP_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            NMAP_NOT_FOUND_WITH_ITEM_NAME: 'the NMAP command for %s. ',
-            NMAP_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that NMAP scan type. ',
+            NMAP_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            NMAP_NOT_FOUND_WITH_ITEM_NAME: "I couldn't find the NMAP command for %s. ",
+            NMAP_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that NMAP scan type ",
             NMAP_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			NMAP_DISPLAY_CARD_TITLE: '%s  - The NMAP command is %s.',			
+			NMAP_DISPLAY_CARD_TITLE: 'The NMAP command for %s',			
 			
 			NETCAT_REPEAT_MESSAGE: 'Try saying repeat.',
-            NETCAT_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            NETCAT_NOT_FOUND_WITH_ITEM_NAME: 'the NetCat command for %s. ',
-            NETCAT_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know the net cat command for that. ',
+            NETCAT_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            NETCAT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the NetCat command for %s ",
+            NETCAT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know the net cat command for that ",
             NETCAT_NOT_FOUND_REPROMPT: 'What else can I help with?',
-			NETCAT_DISPLAY_CARD_TITLE: '%s  - The NetCat command is %s.',
+			NETCAT_DISPLAY_CARD_TITLE: 'The NetCat command for %s',
 			
 			METASPLOIT_REPEAT_MESSAGE: 'Try saying repeat.',
-            METASPLOIT_NOT_FOUND_MESSAGE: "I\'m sorry, I don\'t know ",
-            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: 'the Metasploit command for %s. ',
-            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  'I don\'t know that Metasploit function.',
-            METASPLOIT_NOT_FOUND_REPROMPT: 'What else can I help with?',
-            METASPLOIT_DISPLAY_CARD_TITLE: '%s -The Metaploit command is %s.',
+            METASPLOIT_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
+            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the Metasploit command for %s ",
+            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that Metasploit function ",
+            METASPLOIT_NOT_FOUND_REPROMPT: 'What else can I help with? ',
+            METASPLOIT_DISPLAY_CARD_TITLE: 'The Metaploit command for %s',
         },     
     },         
 };             

@@ -49,6 +49,7 @@ equal
 greater than
 question mark
 at sign
+at
 capital a
 capital b
 capital c

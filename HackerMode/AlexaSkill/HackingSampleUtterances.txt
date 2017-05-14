@@ -1,4 +1,5 @@
 HTMLEncodingIntent how can I HTML encode {CHARItem}
+HTMLEncodingIntent how do you HTML encode {CHARItem}
 HTMLEncodingIntent how do I HTML encode {CHARItem}
 HTMLEncodingIntent how do I HTML encode a {CHARItem}
 HTMLEncodingIntent what is the HTML encoding for a {CHARItem}
@@ -9,83 +10,9 @@ HTMLEncodingIntent what is an HTML encoding for a {CHARItem}
 HTMLEncodingIntent how is {CHARItem} HTML encoded
 HTMLEncodingIntent HTML encoding for {CHARItem}
 HTMLEncodingIntent HTML for {CHARItem}
-HexEncodingIntent how do I Hex encode {CHARItem}
-HexEncodingIntent how do I Hex encode a {CHARItem}
-HexEncodingIntent what is the Hex encoding for a {CHARItem}
-HexEncodingIntent what is the Hex encoding for {CHARItem}
-HexEncodingIntent what is the Hex encoding for the {CHARItem}
-HexEncodingIntent what is an Hex encoding for {CHARItem}
-HexEncodingIntent what is an Hex encoding for a {CHARItem}
-HexEncodingIntent how is {CHARItem} Hex encoded
-HexEncodingIntent Hex encoding for {CHARItem}
-HexEncodingIntent Hex for {CHARItem}
-KnownPortsIntent what port is {NUMItem}
-KnownPortsIntent what is port {NUMItem}
-KnownPortsIntent what is on port number {NUMItem}
-KnownPortsIntent what is on port {NUMItem}
-KnownPortsIntent what is port number {NUMItem}
-KnownPortsIntent what runs on port {NUMItem}
-KnownPortsIntent what runs on port number {NUMItem}
-KnownPortsIntent what service is on port {NUMItem}
-KnownPortsIntent what services are on port {NUMItem}
-KnownPortsIntent what service runs on port {NUMItem}
-KnownPortsIntent what service runs on port number {NUMItem}
-KnownPortsIntent what services run on port number {NUMItem}
-KnownPortsIntent what services run on port {NUMItem}
-KnownPortsIntent what is {NUMItem} port
-KnownPortsIntent what port is TCP {NUMItem}
-KnownPortsIntent what is TCP port {NUMItem}
-KnownPortsIntent what is on TCP port number {NUMItem}
-KnownPortsIntent what is on TCP port {NUMItem}
-KnownPortsIntent what is TCP port number {NUMItem}
-KnownPortsIntent what runs on TCP port {NUMItem}
-KnownPortsIntent what runs on TCP {NUMItem}
-KnownPortsIntent what is on TCP {NUMItem}
-KnownPortsIntent what service is on TCP {NUMItem}
-KnownPortsIntent what runs on TCP port number {NUMItem}
-KnownPortsIntent what service runs on TCP port {NUMItem}
-KnownPortsIntent what service runs on TCP port number {NUMItem}
-KnownPortsIntent what services run on TCP port number {NUMItem}
-KnownPortsIntent what services run on TCP port {NUMItem}
-KnownPortsIntent what is port {NUMItem} TCP
-KnownPortsIntent what port is UDP {NUMItem}
-KnownPortsIntent what is UDP port {NUMItem}
-KnownPortsIntent what is on UDP port number {NUMItem}
-KnownPortsIntent what is on UDP port {NUMItem}
-KnownPortsIntent what is UDP port number {NUMItem}
-KnownPortsIntent what runs on UDP port {NUMItem}
-KnownPortsIntent what runs on UDP {NUMItem}
-KnownPortsIntent what is on UDP {NUMItem}
-KnownPortsIntent what service is on UDP {NUMItem}
-KnownPortsIntent what runs on UDP port number {NUMItem}
-KnownPortsIntent what service runs on UDP port {NUMItem}
-KnownPortsIntent what service runs on UDP port number {NUMItem}
-KnownPortsIntent what services run on UDP port number {NUMItem}
-KnownPortsIntent what services run on UDP port {NUMItem}
-KnownPortsIntent what is port {NUMItem} UDP
-ASCIIEncodingIntent how can I ASCII encode {CHARItem}
-ASCIIEncodingIntent how do I ASCII encode {CHARItem}
-ASCIIEncodingIntent how do I ASCII encode a {CHARItem}
-ASCIIEncodingIntent what is the ASCII encoding for a {CHARItem}
-ASCIIEncodingIntent what is the ASCII encoding for the {CHARItem}
-ASCIIEncodingIntent what is the ASCII encoding for {CHARItem}
-ASCIIEncodingIntent what is an ASCII encoding for {CHARItem}
-ASCIIEncodingIntent what is an ASCII encoding for a {CHARItem}
-ASCIIEncodingIntent how is {CHARItem} ASCII encoded
-ASCIIEncodingIntent ASCII encoding for {CHARItem}
-ASCIIEncodingIntent ASCII for {CHARItem}
-URLEncodingIntent how can I URL encode {CHARItem}
-URLEncodingIntent how do I URL encode {CHARItem}
-URLEncodingIntent how do I URL encode a {CHARItem}
-URLEncodingIntent what is the URL encoding for {CHARItem}
-URLEncodingIntent what is the URL encoding for a {CHARItem}
-URLEncodingIntent what is the URL encoding for the {CHARItem}
-URLEncodingIntent what is a URL encoding for {CHARItem}
-URLEncodingIntent what is a URL encoding for a {CHARItem}
-URLEncodingIntent how is {CHARItem} URL encoded
-URLEncodingIntent URL encoding for {CHARItem}
-URLEncodingIntent URL for {CHARItem}
+HTMLEncodingIntent what is the HTML for {CHARItem}
 WebHeadersIntent what is web header {WHItem}
+WebHeadersIntent what is the {WHItem} web header
 WebHeadersIntent what does web header {WHItem} do
 WebHeadersIntent tell me about web header {WHItem}
 WebHeadersIntent what does header {WHItem} do
@@ -95,10 +22,10 @@ WebHeadersIntent tell me about HTTP header {WHItem}
 WebHeadersIntent what does HTTP header {WHItem} do
 WebHeadersIntent what HTTP header is {WHItem}
 WebHeadersIntent what does the {WHItem} header do
+WebHeadersIntent what does the {WHItem} web header do
 WebHeadersIntent what is a {WHItem} header
 WebHeadersIntent what is HTTP header {WHItem}
 WebHeadersIntent what are {WHItem} headers
-WebHeadersIntent list {WHItem} headers
 WebHeadersIntent tell me about the {WHItem} header
 WebHeadersIntent what can you tell me about the {WHItem} header
 WebHeadersIntent tell me about {WHItem} header
@@ -106,6 +33,7 @@ HTTPVerbsIntent what are {HVItem} verbs
 HTTPVerbsIntent what does the HTTP verb {HVItem} do
 HTTPVerbsIntent what is the http verb {HVItem}
 HTTPVerbsIntent list {HVItem} verbs
+HTTPVerbsIntent list {HVItem} http verbs
 HTTPVerbsIntent what is the {HVItem} verb
 HTTPVerbsIntent tell me about the {HVItem} verb
 HTTPVerbsIntent what does the {HVItem} verb do
@@ -137,6 +65,9 @@ NmapIntent how do I do a {NMItem} with n-map
 NmapIntent how can I do a {NMItem} scan
 NmapIntent how can I do a {NMItem} n-map scan
 NmapIntent how can I do a {NMItem} scan with n-map
+NmapIntent how do you do a {NMItem} scan
+NmapIntent how do you do a {NMItem} n-map scan
+NmapIntent how do you do a {NMItem} scan with n-map
 NmapIntent how can I set up a {NMItem} scan
 NmapIntent how can I set up a {NMItem} n-map scan
 NmapIntent how can I set up a {NMItem} scan with n-map
@@ -157,6 +88,9 @@ NmapIntent in N-map how would I do a {NMItem}
 NmapIntent in N-map how can I do a {NMItem} scan
 NmapIntent in N-map how do I do a {NMItem} scan
 NetcatIntent how do you set up a {NCItem} with net cat
+NetcatIntent how do you do a net cat {NCItem}
+NetcatIntent how do you do a {NCItem} in net cat
+NetcatIntent how do you do a {NCItem} using net cat
 NetcatIntent how do you set up a net cat {NCItem}
 NetcatIntent how do you set up a {NCItem} in net cat
 NetcatIntent how do you set up a {NCItem} using net cat
@@ -209,33 +143,135 @@ NetcatIntent in net cat what is the command line for {NCItem}
 NetcatIntent in net cat how do I do a {NCItem}
 MetasploitIntent how do you {MSFItem} in meta sploit
 MetasploitIntent how do you {MSFItem} meta sploit
+MetasploitIntent how do you {MSFItem} with meta sploit
+MetasploitIntent how do you do {MSFItem} in meta sploit
+MetasploitIntent how do you do {MSFItem} meta sploit
+MetasploitIntent how do you do {MSFItem} with meta sploit
 MetasploitIntent how do you use {MSFItem} in meta sploit
 MetasploitIntent how do I {MSFItem} in meta sploit
+MetasploitIntent how do I {MSFItem} with meta sploit
 MetasploitIntent how do I do {MSFItem} in meta sploit
+MetasploitIntent how do I do {MSFItem} with meta sploit
 MetasploitIntent how do I do an {MSFItem} in meta sploit
 MetasploitIntent how do I {MSFItem} meta sploit
-MetasploitIntent how do I use {MSFItem} in meta sploit 
+MetasploitIntent how do I use {MSFItem} in meta sploit
 MetasploitIntent how would I do a {MSFItem} in meta sploit
+MetasploitIntent how would I do a {MSFItem} with meta sploit
 MetasploitIntent how would I {MSFItem} in meta sploit
 MetasploitIntent how would I {MSFItem} meta sploit
 MetasploitIntent how would I {MSFItem} with meta sploit
 MetasploitIntent tell me how to {MSFItem} in meta sploit
+MetasploitIntent tell me how to {MSFItem} using meta sploit
 MetasploitIntent tell me how to {MSFItem} with meta sploit
 MetasploitIntent how can I {MSFItem} in meta sploit
 MetasploitIntent how can I {MSFItem} with meta sploit
 MetasploitIntent what is the syntax for {MSFItem} in meta sploit
 MetasploitIntent what is the way to {MSFItem} in meta sploit
 MetasploitIntent tell me how to {MSFItem} in meta sploit
+MetasploitIntent tell me how to {MSFItem} using meta sploit
 MetasploitIntent tell me how to {MSFItem} with meta sploit
 MetasploitIntent in meta sploit how do I {MSFItem}
 MetasploitIntent in meta sploit how can I {MSFItem}
 MetasploitIntent in meta sploit how would I {MSFItem}
+MetasploitIntent in meta sploit what does the command {MSFItem} do
+MetasploitIntent in meta sploit what does the command line {MSFItem} do
+MetasploitIntent in meta sploit what is the command {MSFItem}
+MetasploitIntent in meta sploit what is the command {MSFItem} for
 MetasploitIntent in meta sploit what is the command for {MSFItem}
 MetasploitIntent in meta sploit what is the command line for {MSFItem}
 MetasploitIntent in meta sploit what is the syntax for {MSFItem}
 MetasploitIntent what is the command for {MSFItem} in meta sploit
 MetasploitIntent what is the meta sploit command for {MSFItem}
+MetasploitIntent what is the meta sploit command line for {MSFItem}
 MetasploitIntent what is the meta sploit syntax for {MSFItem}
 MetasploitIntent what is the meta sploit console command for {MSFItem}
 MetasploitIntent what is the meta sploit console syntax for {MSFItem}
 MetasploitIntent what is the meta sploit command line for {MSFItem}
+HexEncodingIntent how do I Hex encode {CHARItem}
+HexEncodingIntent how do I Hex encode a {CHARItem}
+HexEncodingIntent tell me the Hex encoding for a {CHARItem}
+HexEncodingIntent tell me the Hex encoding for {CHARItem}
+HexEncodingIntent tell me the Hex encoding for the {CHARItem}
+HexEncodingIntent give me the Hex encoding for a {CHARItem}
+HexEncodingIntent give me the Hex encoding for {CHARItem}
+HexEncodingIntent give me the Hex encoding for the {CHARItem}
+HexEncodingIntent what is the Hex encoding for a {CHARItem}
+HexEncodingIntent what is the Hex encoding for {CHARItem}
+HexEncodingIntent what is the Hex encoding for the {CHARItem}
+HexEncodingIntent what is an Hex encoding for {CHARItem}
+HexEncodingIntent how is {CHARItem} Hex encoded
+HexEncodingIntent Hex encoding for {CHARItem}
+HexEncodingIntent Hex for {CHARItem}
+HexEncodingIntent how do you hex encode for a {CHARItem}
+HexEncodingIntent how do you hex encode for {CHARItem}
+HexEncodingIntent how do you hex encode for the {CHARItem}
+HexEncodingIntent how do you hex encode the {CHARItem}
+HexEncodingIntent how do you hex encode {CHARItem}
+ASCIIEncodingIntent how can I ASCII encode {CHARItem}
+ASCIIEncodingIntent how do I ASCII encode {CHARItem}
+ASCIIEncodingIntent how do I ASCII encode a {CHARItem}
+ASCIIEncodingIntent what is the ASCII encoding for a {CHARItem}
+ASCIIEncodingIntent what is the ASCII encoding for the {CHARItem}
+ASCIIEncodingIntent what is the ASCII encoding for {CHARItem}
+ASCIIEncodingIntent what is an ASCII encoding for {CHARItem}
+ASCIIEncodingIntent what is an ASCII encoding for a {CHARItem}
+ASCIIEncodingIntent how is {CHARItem} ASCII encoded
+ASCIIEncodingIntent ASCII encoding for {CHARItem}
+ASCIIEncodingIntent ASCII for {CHARItem}
+URLEncodingIntent how can I URL encode {CHARItem}
+URLEncodingIntent how do I URL encode {CHARItem}
+URLEncodingIntent how do I URL encode a {CHARItem}
+URLEncodingIntent how do you URL encode {CHARItem}
+URLEncodingIntent how do you URL encode the {CHARItem}
+URLEncodingIntent how do you URL encode a {CHARItem}
+URLEncodingIntent what is the URL encoding for {CHARItem}
+URLEncodingIntent what is the URL encoding for a {CHARItem}
+URLEncodingIntent what is the URL encoding for the {CHARItem}
+URLEncodingIntent what is a URL encoding for {CHARItem}
+URLEncodingIntent what is a URL encoding for a {CHARItem}
+URLEncodingIntent how is {CHARItem} URL encoded
+URLEncodingIntent URL encoding for {CHARItem}
+URLEncodingIntent URL for {CHARItem}
+KnownPortsIntent what port is {NUMItem}
+KnownPortsIntent what is port {NUMItem}
+KnownPortsIntent what is on port number {NUMItem}
+KnownPortsIntent what is on port {NUMItem}
+KnownPortsIntent what is port number {NUMItem}
+KnownPortsIntent what runs on port {NUMItem}
+KnownPortsIntent what runs on port number {NUMItem}
+KnownPortsIntent what service is on port {NUMItem}
+KnownPortsIntent what services are on port {NUMItem}
+KnownPortsIntent what service runs on port {NUMItem}
+KnownPortsIntent what service runs on port number {NUMItem}
+KnownPortsIntent what services run on port number {NUMItem}
+KnownPortsIntent what services run on port {NUMItem}
+KnownPortsIntent what port is TCP {NUMItem}
+KnownPortsIntent what is TCP port {NUMItem}
+KnownPortsIntent what is on TCP port number {NUMItem}
+KnownPortsIntent what is on TCP port {NUMItem}
+KnownPortsIntent what is TCP port number {NUMItem}
+KnownPortsIntent what runs on TCP port {NUMItem}
+KnownPortsIntent what runs on TCP {NUMItem}
+KnownPortsIntent what is on TCP {NUMItem}
+KnownPortsIntent what service is on TCP {NUMItem}
+KnownPortsIntent what runs on TCP port number {NUMItem}
+KnownPortsIntent what service runs on TCP port {NUMItem}
+KnownPortsIntent what service runs on TCP port number {NUMItem}
+KnownPortsIntent what services run on TCP port number {NUMItem}
+KnownPortsIntent what services run on TCP port {NUMItem}
+KnownPortsIntent what is port {NUMItem} TCP
+KnownPortsIntent what port is UDP {NUMItem}
+KnownPortsIntent what is UDP port {NUMItem}
+KnownPortsIntent what is on UDP port number {NUMItem}
+KnownPortsIntent what is on UDP port {NUMItem}
+KnownPortsIntent what is UDP port number {NUMItem}
+KnownPortsIntent what runs on UDP port {NUMItem}
+KnownPortsIntent what runs on UDP {NUMItem}
+KnownPortsIntent what is on UDP {NUMItem}
+KnownPortsIntent what service is on UDP {NUMItem}
+KnownPortsIntent what runs on UDP port number {NUMItem}
+KnownPortsIntent what service runs on UDP port {NUMItem}
+KnownPortsIntent what service runs on UDP port number {NUMItem}
+KnownPortsIntent what services run on UDP port number {NUMItem}
+KnownPortsIntent what services run on UDP port {NUMItem}
+KnownPortsIntent what is port {NUMItem} UDP

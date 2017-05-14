@@ -50,4 +50,5 @@ begin an exploit
 start an exploit
 meterpreter
 MSF venom
+venom
 set params

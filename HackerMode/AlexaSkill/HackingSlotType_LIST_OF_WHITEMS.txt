@@ -1,70 +1,70 @@
 all
-Accept
-Accept-Charset
-Accept-Encoding
-Accept-Language
-Accept-Ranges
-Access-Control-Allow-Credentials
-Access-Control-Allow-Headers
-Access-Control-Allow-Methods
-Access-Control-Allow-Origin
-Access-Control-Expose-Headers
-Access-Control-Max-Age
-Access-Control-Request-Headers
-Access-Control-Request-Method
-Age
-Cache-Control
-Connection
-Content-Disposition
-Content-Encoding
-Content-Language
-Content-Length
-Content-Location
-Content-Security-Policy
-Content-Security-Policy-Report-Only
-Content-Type
-Cookie
-Cookie2
-DNT
-Date
-ETag
-Expires
-From
-Host
-If Match
-If Modified Since
-If None Match
-If Range
-If Unmodified-Since
-Keep Alive
-Last Modified
-Location
-Origin
-Pragma
-Public Key Pins
-Public Key Pins Report Only
-Referer
-Referrer Policy
-Retry After
-Server
-Set Cookie
-Set Cookie 2
-Strict Transport Security
-TE
-Tk
-Trailer
-Transfer Encoding
-Upgrade Insecure Requests
-User Agent
-Vary
-Via
-Warning
-X Content Type Options
-Content Type Options
-X D N S Prefetch Control
-D N S Prefetch
-X Frame Options
-X X S S Protection
-Cross site scripting protection
-Cross site scripting
-X S S
+accept
+accept charset
+accept encoding
+accept language
+accept ranges
+access control allow credentials
+access control allow headers
+access control allow methods
+access control allow origin
+access control expose headers
+access control max age
+access control request headers
+access control request method
+age
+cache control
+connection
+content disposition
+content encoding
+content language
+content length
+content location
+content security policy
+content security policy report only
+content type
+cookie
+cookie two
+d. n. t.
+date
+e. tag
+expires
+from
+host
+if match
+if modified since
+if none match
+if range
+if unmodified since
+keep alive
+last modified
+location
+origin
+pragma
+public key pins
+public key pins report only
+referer
+referrer policy
+retry after
+server
+set cookie
+set cookie two
+strict transport security
+T.E.
+T.K.
+trailer
+transfer encoding
+upgrade insecure requests
+user agent
+vary
+via
+warning
+x. content type options
+content type options
+x. d. n. s. prefetch control
+d. n. s. prefetch
+x. frame options
+x. x. s. s. protection
+cross site scripting protection
+cross site scripting
+x. x. s. s.

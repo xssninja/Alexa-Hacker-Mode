@@ -11,18 +11,18 @@ patch
 prop find
 prop patch
 notify
-b copy
-b delete
-b move
-b prop find
-b prop patch
+b. copy
+b. delete
+b. move
+b. prop find
+b. prop patch
 copy
 lock
-m k col
+m.k. col
 move
 poll
 search
 subscribe
 unlock
 unsubscribe
-x ms enum atts
+x. m. s. enum atts
