@@ -1,4 +1,7 @@
-                    GNU GENERAL PUBLIC LICENSE + Amazon requirement*
+                    GNU GENERAL PUBLIC LICENSE 
+					+ Amazon requirement*
+					+ Registration of derivative products requirement*
+					(see final 2 paragraphs)
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
@@ -677,3 +680,22 @@ Public License instead of this License.  But first, please read
 or intended for use with the web services, computing platforms or applications
 provided by Amazon.com, Inc. or its affiliates, including 
 Amazon Web Services, Inc.
+
+* Use Limitation. Skills made based on this project or any portion of it may 
+not be registered with Amazon to compete with this skill. Permission may be 
+obtained to make derivative products and registering them for use with Amazon 
+for use with Alexa if: a) the product doesn't compete or contain the same or 
+similar skills b) and it does not have a substantially similar invocation name 
+to 'hacker mode' and c) and if permission is obtained from David Cross via
+an email to superdave.cross@gmail.com and acknowledgement and expressed permission
+for the stated project as described in your email to him. David will make an 
+effort to not unreasonably withhold permission to create derivative works 
+given the limitations stated. 
+
+By using this, or any portion of the software as a basis for a product, 
+you agree to the terms of this license and the Use Limitations as specified. 
+If the GPL appears to conflict with the Use Limitations, the Use Limitations 
+supercede the portions of the GPL that conflict.
+
+
+
