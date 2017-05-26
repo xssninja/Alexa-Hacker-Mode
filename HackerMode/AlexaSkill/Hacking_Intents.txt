@@ -9,6 +9,7 @@
 	{"intent": "ASCIIEncodingIntent", "slots": [{"name" : "CHARItem", "type": "LIST_OF_CHARITEMS"}]},
 	{"intent": "URLEncodingIntent", "slots": [{"name" : "CHARItem", "type": "LIST_OF_CHARITEMS"}]},
 	{"intent": "KnownPortsIntent", "slots": [{"name" : "NUMItem", "type": "LIST_OF_NUMITEMS"}]},
+	{"intent": "HTTPResponseIntent", "slots": [{"name" : "RCItem", "type": "AMAZON.NUMBER"}]},
 	{"intent": "AMAZON.RepeatIntent"},
     {"intent": "AMAZON.HelpIntent"},
     {"intent": "AMAZON.StopIntent"},

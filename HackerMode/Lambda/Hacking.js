@@ -241,13 +241,19 @@ const nmap = { "NMAP_EN_US" : {
 	"show web site paths": {"speech" : "at the command prompt, enter n map space dash dash script=http dash enum space 192.168.1.0 forward slash 24", "card" : "nmap --script=http-enum 192.168.1.0/24"},
 // list NSE scripts
 	"find out what nse scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	"find out what n. s. e. scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"find out which nse scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	"find out which n. s. e. scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"find which nse scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	"find which n. s. e. scripts are installed": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"find installed nse scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	"find installed n. s. e. scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"nse scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	"n. s. e. scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"list installed scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
 	"list nse scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
-// save scan
+	"list n. s. e. scripts": {"speech" : "locate space nse space pipe space grep space script", "card" : "locate nse | grep script"},
+	// save scan
 	"scan using safe scripts": {"speech" : "nmap space dash s upper-case V dash s upper-case C space 192.168.1.1", "card" : "nmap -sV -sC 192.168.1.1"},
 	"do a scan using safe scripts": {"speech" : "nmap space dash s upper-case V dash s upper-case C space 192.168.1.1", "card" : "nmap -sV -sC 192.168.1.1"},
 	"use safe scripts": {"speech" : "nmap space dash s upper-case V dash s upper-case C space 192.168.1.1", "card" : "nmap -sV -sC 192.168.1.1"},
@@ -549,6 +555,7 @@ const httpverbs = { "HTTPVERBS_EN_US": {
 	"trace" : "Trace is intended to perform a loop-back test along the path to the target resource.",
 	"connect" : "Connect establishes a tunnel to the server which is providing the resource.",
 	"xml http request" : "XML HTTP request makes a request to a web resource which is done asynchronously. XML HTTP requests will have what is called a pre-flight check to validate permission to access the domain of the requested resource.",
+	"x. m. l. http request" : "XML HTTP request makes a request to a web resource which is done asynchronously. XML HTTP requests will have what is called a pre-flight check to validate permission to access the domain of the requested resource.",
 	"patch" : "Patch was intended to apply partial modifications to a resource. In restful web services Patch can be used to update or modify a record.  It a restful context it returns 200 upon success, 204 no content if invalid or 404 not found.",
 	"prop find" : "Prop find web-dav verb returns information about an outlook resource. It can have a depth header setting of 0 or 1. 0 returns properties for the resource only. One will return properties for the resource and it\'s children.",
 	"prop patch" : "Prop patch web-dav verb patches or updates properties of a resource in Outlook web resources.",
@@ -581,19 +588,20 @@ const webheaders = { "WEBHEADERS_EN_US": {
 	"all": "Request headers and response headers. There are headers to prevent xss, cross origin requests and other security features. Some headers have to do with the referer and information about the user-agent. Unfortunately, a complete list would take too long to read.",
 	"accept" : "The accept request header notifies the server of what mime types the browser supports.",
 	"accept charset" : "The accept-char set request header notifies the server what character sets the browser understands.",
+	"accept char set" : "The accept-char set request header notifies the server what character sets the browser understands.",
 	"accept encoding" : "The accept-encoding request header tells the server which encodings and compression the browser will accept, like G zip, deflate etcetera.",
 	"accept language" : "The accept-language request header advertises which languages the browser is able to understand.",
 	"accept ranges" : "The accept-ranges response header is used by the server to tell the browser if it will accept partial requests.",
-	"access control-allow-credentials" : "The access-control-allow-credentials response header indicates whether or not the response to the request can be written to the page. It can be used if the returned value is true. This header can be used in pre-flight requests to validate whether credentials can be used as part of an XHR request.",
-	"access control-allow-headers" : "The access-control-allow-credentials header is a response header which is used in pre-flight requests to determine which HTTP headers will be available via the Access-control-expose-headers header when making the XHR request.",
-	"access control-allow-methods" : "The access-control-allow-methods header is a response header which indicates what methods are allowed when fetching the resource in the response to a preflight request.",
-	"access control-allow-origin" : "The access-control-allow-origin header is a response header which tells the browser whether the response can be shared with resources with the given origin.",
-	"access control-expose-headers" : "The access-control-expose-headers response header lets the requestor know which headers can be exposed as part of the response by listing them for the browser.",
-	"access control-max-age" : "The access-control-max-age header is a response header that tells the browser how long the results of a pre-flight request can be cached.",
-	"access control-request-headers" : "The access-control-request-headers is a request header that is used when making a pre-flight request to notify the server which HTTP headers will be used during the XHR request.",
-	"access control-request-method" : "The access-control-request-method header is a request header that is used when making pre-flight requests to notify the server which HTTP method will be used when making the request. This header is required because the pre-flight check uses the options verb and does not use the same method as the final request.",
+	"access control allow credentials" : "The access-control-allow-credentials response header indicates whether or not the response to the request can be written to the page. It can be used if the returned value is true. This header can be used in pre-flight requests to validate whether credentials can be used as part of an XHR request.",
+	"access control allow headers" : "The access-control-allow-credentials header is a response header which is used in pre-flight requests to determine which HTTP headers will be available via the Access-control-expose-headers header when making the XHR request.",
+	"access control allow methods" : "The access-control-allow-methods header is a response header which indicates what methods are allowed when fetching the resource in the response to a preflight request.",
+	"access control allow origin" : "The access-control-allow-origin header is a response header which tells the browser whether the response can be shared with resources with the given origin.",
+	"access control expose headers" : "The access-control-expose-headers response header lets the requestor know which headers can be exposed as part of the response by listing them for the browser.",
+	"access control max age" : "The access-control-max-age header is a response header that tells the browser how long the results of a pre-flight request can be cached.",
+	"access control request headers" : "The access-control-request-headers is a request header that is used when making a pre-flight request to notify the server which HTTP headers will be used during the XHR request.",
+	"access control request method" : "The access-control-request-method header is a request header that is used when making pre-flight requests to notify the server which HTTP method will be used when making the request. This header is required because the pre-flight check uses the options verb and does not use the same method as the final request.",
 	"age" : "The age header contains the time in seconds that the item has been cached.",
-	"cache-control" : "The cache-control header is a general header that specifies cache options for either requests and responses but both client and server are required to provide this header as needed.",
+	"cache control" : "The cache-control header is a general header that specifies cache options for either requests and responses but both client and server are required to provide this header as needed.",
 	"connection" : "The connection is a general header that specifies whether the network connection stays open after the current transaction finishes. If the value is keep-alive then the connection is persistent. Subsequent headers used in the following requests must be specified in the connection header so a proxy knows it needs to consume them and not pass them on.",
 	"content disposition" : "The content-disposition response header indicates whether the content should be displayed in-line in the browser. In a multi-part form data body the HTTP content disposition general header can be used on a part of the multi-part body to give added information to that data segment. Sub-parts are delimited by boundary delimiters.",
 	"content encoding" : "The content-encoding header is an entity header that specifies compression of the media-type. It can tell the client how to decode in order to obtain the media type specified by the content-type header.",
@@ -636,6 +644,8 @@ const webheaders = { "WEBHEADERS_EN_US": {
 	"tk" : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation, question mark, G, N for no tracking. T stands for tracking. C is tracking with consent. D equals disregard do not track. etc.",
 	"t e" : "The TE header is a request header that determines the transfer encodings the browser can process. Chunked encoding is always accepted by default in modern browsers.",
 	"t k" : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation, question mark, G, N for no tracking. T stands for tracking. C is tracking with consent. D equals disregard do not track. etc.",
+	"t. e." : "The TE header is a request header that determines the transfer encodings the browser can process. Chunked encoding is always accepted by default in modern browsers.",
+	"t. k." : "The TK header is a response header that provides tracking status for requests. Statuses include, exclamation, question mark, G, N for no tracking. T stands for tracking. C is tracking with consent. D equals disregard do not track. etc.",
 	"trailer" : "The trailer header is a response header that allows for the inclusion of additional fields at the end of chuncked messages which may contain dynamically generated data appended to the message body, like CRC checks, digital signatures or post processing indicators.",
 	"transfer encoding" : "The transfer-encoding header is similar to content dash encoding header but is specific to each discreet message. It often is returned in response to a HEAD request indicating how it would return the corresponding get request. Examples are chunked, deflate, gzip etcetera.",
 	"upgrade insecure requests" : "The upgrade-insecure-requests header is a request header that tells the server that the browser wants to enable encryption if possible. True equals the value of 1 in this case.",
@@ -644,14 +654,20 @@ const webheaders = { "WEBHEADERS_EN_US": {
 	"via" : "The via header is a general header added by proxies. It can be either in request or response headers. I helps in traffic issues and identifying the protocol options of the sending nodes that help serve and proxy the reqeusts.",
 	"warning" : "The warning header is a general header that contains information about errors or problems. Multiple warnings may be queued in the same response. For example, warn dash agent, warn dash text, warn dash date, etc.",
 	"x content type options" : "The X-content-type options response header is used to indicate mime types noted in the content type header should not be changed. This header was intended to block mime types from being changed to executable types. The no sniff setting is intended to prevent content type alteration as part of an attack.",
+	"x. content type options" : "The X-content-type options response header is used to indicate mime types noted in the content type header should not be changed. This header was intended to block mime types from being changed to executable types. The no sniff setting is intended to prevent content type alteration as part of an attack.",
 	"x d n s prefetch control" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
 	"d n s prefetch" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
+	"x. d. n. s. prefetch control" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
+	"d. n. s. prefetch" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
 	"xcontent type options" : "The X-content-type options response header is used to indicate mime types noted in the content type header should not be changed. This header was intended to block mime types from being changed to executable types. The no sniff setting is intended to prevent content type alteration as part of an attack.",
 	"xdns prefetch control" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
 	"dns prefetch" : "The X-DNS-Prefetch-control header is a response header. It controls DNS prefetching which browsers use to do domain name resolution on URLs the user follows or referenced resources from the web document itself. This feature is intended to increase performance by making a page cache the IPs for domains referred to in the document.  Possible values are on or off.",
 	"x frame options" : "The X-frame-options header is intended to prevent the browser from rendering the page within an iframe to thwart iframe overlay or content replacement patterns common to watering hole attacks",
+	"x. frame options" : "The X-frame-options header is intended to prevent the browser from rendering the page within an iframe to thwart iframe overlay or content replacement patterns common to watering hole attacks",
 	"xxss protection" : "The X-dash-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
 	"xxss" : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
+	"x. x. s. s. protection" : "The X-dash-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
+	"x. x. s. s." : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
 	"xframe options" : "The X-frame-options header is intended to prevent the browser from rendering the page within an iframe to thwart iframe overlay or content replacement patterns common to watering hole attacks",
 	"x x s s protection" : "The X-dash-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
 	"x x s s" : "The X-XSS-Protection header is a response header that is intended to instruct the browser not to render pages that contain cross site script or script that is not sourced from the pages original fully qualified domain name. In newer browsers, content security policy can provide greater flexibility for setting script domain sourcing options and many other security settings.",
@@ -680,6 +696,7 @@ const htmlencodings = {   "HTML_EN_US" : {
         "exclamation": { "speech": "ampersand pound 33 semi-colon or, ampersand i e x c l semi-colon", "card" : "&#33; or &iexcl;"},
         "double quote": { "speech": "ampersand pound 34 semi-colon or, ampersand q u o t semi-colon", "card" : "&#34; or &quot;"},
         "pound": { "speech": "ampersand pound 35 semi-colon", "card" : "&#35;"},
+        "hash": { "speech": "ampersand pound 35 semi-colon", "card" : "&#35;"},
         "dollar sign": { "speech": "ampersand pound 36 semi-colon", "card" : "&#36;"},
         "percent": { "speech": "ampersand pound 37 semi-colon", "card" : "&#37;"},
         "ampersand": { "speech": "ampersand pound 38 semi-colon or, ampersand a m p semi-colon", "card" : "&#38; or &amp;"},
@@ -972,8 +989,53 @@ const charencodings = {   "CHAR_EN_US" : {
         "right double quote": { "speech": "", "card" : "148"},
         "tilde": { "speech": "", "card" : "152"}
 		}};
+	
+const responsecodes = {   "RESPONSECODES_EN_US" : {
+ 	"100": "100 or Continue, tells the client that it should finish sending the next portion of the request.",
+	"101": "101 Switching Protocols means that the server had a positive response to the request and is initiating a new protocol other than HTTP with the Upgrade header.",
+	"200": "200 OK. The OK response indicates success. GET returns the resource in the response, POST returns an entity describig the results of the post.",
+	"201": "201 Created indicates that the request was received and processed and resulted in the creation of a resource.",
+	"202": "202 or Accepted indicates that a request has been accepted for asynchronous processing.",
+	"203": "203 Non-Authoritative Information is returned when a response contains a copy of data which is not from the origin server.",
+	"204": "204 or No Content, is a response that lets the user agent know the action was successful but no response body will be returned for the action, but headers may contain information about the results of the request.",
+	"205": "205 Reset Content tells the user agent to reset the document view. This code was intended to assist with user input actions so that input forms could be reset.",
+	"206": "206 or Partial Content is a response to a request which specified a range.",
+	"300": "300 or Multiple Choices, means that a resource may be found at several different locations. The response should contain a list of the locations.",
+	"301": "301 or Moved Permanently, means that the resource has been moved to a different URI. The new URI should be returned in the Location response header.",
+	"302": "302 or Found, indicates that the requested resource is located at a different URI. The URI should be specified in the Location resonse header. ",
+	"303": "303 or See Other. The request may be able to be satisfied by a resource at a different URI.",
+	"304": "304 is Not Modified. Requests that specify headers which retrieve data if the data has changed may recieve this response.",
+	"305": "305 is Use Proxy. The requested URI must be requested via the proxy specified in the Location header.",
+	"306": "306 is Unused. Response code 306 is not supported in the current HTTP specification.",
+	"307": "307 Temporary Redirect. The requested URI is temporarily located elsewhere.",
+	"400": "400 Bad Request.",
+	"401": "401 is Unauthorized. The response should include a WWW authenticate header.",
+	"402": "402 is Payment Required. This code is reserved for pay wall functionality.",
+	"403": "403 is Forbidden. The reason for the forbidden request should be specified in the response.",
+	"404": "404 is Not Found. The server was not able to find the URI or the request is being disallowed for unspecified reasons.",
+	"405": "405 is Method Not Allowed. The response should include an Allow header that specifies accepted methods.",
+	"406": "406 is Not Acceptable. Not Acceptable means that the request headers specify that the content type the server is able to respond with is explicitly not supported.",
+	"407": "407 is Proxy Authentication Required.",
+	"408": "408 is Request Timeout.",
+	"409": "409 is Conflict. Responding to the request would cause a state problem, or data contention issue. A list of differences in the resource data may be returned along with this response code.",
+	"410": "410 is Gone. The Gone response indicates that the requested resource is not available and has no forwarding information.",
+	"411": "411 is Length Required.",
+	"412": "412 is Precondition Failed.",
+	"413": "413 is Request Entity Too Large.",
+	"414": "414 is Request URI Too Long",
+	"415": "415 is Unsupported Media Type.",
+	"416": "416 is Request Range Not Satisfiable. This is recieved when a Range header provided a range that does not match what the server can provide.",
+	"417": "417 is Expectation Failed. Or, a request header field could not be honored by the server.",
+	"500": "500 is Internal Server Error",
+	"501": "501 is Not Implemented.",
+	"502": "502 is Bad Gateway",
+	"503": "503 is Service Unavailable.",
+	"504": "504 is Gateway Timeout.",
+	"505": "505 is HTTP Version Not Supported."
+}};	
+		
   
-const APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
+const APP_ID = "Hacker Mode"; // TODO replace with your app ID (OPTIONAL).
  
         function getRandomInt(low, high) { 
              return Math.floor(Math.random() * (high - low + 1)) + low;
@@ -1204,9 +1266,9 @@ const handlers = {
         const encoding = myHTMLEncodings[itemName];
         //this.emit(':ask',itemName + " <> " + myHTMLEncodings[1]+ myHTMLEncodings[2]+ myHTMLEncodings[3]+ myHTMLEncodings[4]);       
         if (encoding) {
-            this.attributes.speechOutput = encoding.speech;  // sub item speech
+            this.attributes.speechOutput = itemName + " is represented by " + encoding.speech;  // sub item speech
             this.attributes.repromptSpeech = this.t('HTMLENCODING_REPEAT_MESSAGE');
-            this.emit(':askWithCard', encoding.speech, this.attributes.repromptSpeech, cardTitle, encoding.card);  // sub item card
+            this.emit(':askWithCard', encoding.speech, this.attributes.repromptSpeech, cardTitle + itemName, encoding.card);  // sub item card
         } else {
             let speechOutput = this.t('HTMLENCODING_NOT_FOUND_MESSAGE');
             const repromptSpeech = this.t('HTMLENCODING_NOT_FOUND_REPROMPT');
@@ -1275,8 +1337,9 @@ const handlers = {
         const cardTitle = this.t('ASCIIENCODING_DISPLAY_CARD_TITLE', itemName);
         const myEncodings = this.t('CHARENCODINGS');
         const encoding =  myEncodings[itemName];
-               encoding.speech = encoding.card;
+          
         if (encoding) {
+			encoding.speech = encoding.card;
             this.attributes.speechOutput = encoding; //encoding.speech;  // sub item speech
             this.attributes.repromptSpeech = this.t('ASCIIENCODING_REPEAT_MESSAGE');
             this.emit(':askWithCard', encoding.speech , this.attributes.repromptSpeech, cardTitle, encoding.card);
@@ -1334,6 +1397,41 @@ const handlers = {
         }      
     }, 
 	
+	//HTTP response code 
+    'HTTPResponseIntent': function () {
+        const itemSlot = this.event.request.intent.slots.RCItem;
+        let itemName;
+        if (itemSlot && itemSlot.value) {
+            itemName = itemSlot.value.toString();
+            //itemName = itemName.replace('.', '');
+            //console.log('HTTPResponseIntent>' + itemName);
+        }      
+               
+        const cardTitle = this.t('RESPONSECODE_DISPLAY_CARD_TITLE', itemName);
+        const myResponseCodes = this.t('RESPONSECODES');
+        const responsecode =  myResponseCodes[itemName];
+               
+        if (responsecode) {
+            this.attributes.speechOutput = responsecode; //responsecode.speech;  // sub item speech
+            this.attributes.repromptSpeech = this.t('RESPONSECODES_REPEAT_MESSAGE');
+            this.emit(':askWithCard', responsecode , this.attributes.repromptSpeech, cardTitle, responsecode);
+        } else {
+            let speechOutput = this.t('RESPONSECODES_NOT_FOUND_MESSAGE');
+            const repromptSpeech = this.t('RESPONSECODES_NOT_FOUND_REPROMPT');
+            if (itemName) {
+                speechOutput += this.t('RESPONSECODES_NOT_FOUND_WITH_ITEM_NAME', itemName);
+            } else {
+                speechOutput += this.t('RESPONSECODES_NOT_FOUND_WITHOUT_ITEM_NAME');
+            }  
+            // speechOutput += repromptSpeech;
+            console.log('HTTPResponseIntent>' + itemName);
+            this.attributes.speechOutput = speechOutput;
+            this.attributes.repromptSpeech = repromptSpeech;
+               
+            this.emit(':ask', speechOutput, repromptSpeech);
+        }      
+    }, 	
+	
     'AMAZON.HelpIntent': function () {
         this.attributes.speechOutput = this.t('HELP_MESSAGE');
         this.attributes.repromptSpeech = this.t('HELP_REPROMT');
@@ -1364,6 +1462,7 @@ const languageStrings = {
 			NMAP: nmap.NMAP_EN_US,
 			NETCAT: netcat.NETCAT_EN_US,
 			METASPLOIT: metasploit.METASPLOIT_EN_US,
+			RESPONSECODES: responsecodes.RESPONSECODES_EN_US,
 			
             SKILL_NAME: 'Hacker Mode',
             WELCOME_MESSAGE0: "Now in hacker mode! Ask me about HTML, URL, hex and ASCII encoding and other hackery things.",
@@ -1440,11 +1539,18 @@ const languageStrings = {
 			NETCAT_DISPLAY_CARD_TITLE: 'The NetCat command for %s',
 			
 			METASPLOIT_REPEAT_MESSAGE: 'Try saying repeat.',
-            METASPLOIT_NOT_FOUND_MESSAGE: "I'm sorry, I don't know, try asking in a different way ",
-            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the Metasploit command for %s ",
-            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that Metasploit function ",
+            METASPLOIT_NOT_FOUND_MESSAGE: "I'm sorry, I don't know that meta sploit command or function.",
+            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the Meta sploit command for %s ",
+            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that Meta sploit function ",
             METASPLOIT_NOT_FOUND_REPROMPT: 'What else can I help with? ',
             METASPLOIT_DISPLAY_CARD_TITLE: 'The Metaploit command for %s',
+			
+			RESPONSECODES_REPEAT_MESSAGE: 'Try saying repeat.',
+            RESPONSECODES_NOT_FOUND_MESSAGE: "I'm sorry, I didn't quite understand that HTTP response code. ",
+            RESPONSECODES_NOT_FOUND_WITH_ITEM_NAME: "I can't find the HTTP response code for %s ",
+            RESPONSECODES_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that HTTP response code.",
+            RESPONSECODES_NOT_FOUND_REPROMPT: 'What elase can I help with? ',
+            RESPONSECODES_DISPLAY_CARD_TITLE: 'The HTTP response code %s',
         },     
     },         
 };             

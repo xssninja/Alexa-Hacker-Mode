@@ -25,10 +25,13 @@ show web site paths
 find out what NSE scripts are installed
 find out which NSE scripts are installed
 find which NSE scripts are installed
+find which n. s. e. scripts are installed
 find installed NSE scripts
 NSE scripts
+n. s. e. scripts
 list installed scripts
 list NSE scripts
+list n. s. e. scripts
 scan using safe scripts
 do a scan using safe scripts
 use safe scripts

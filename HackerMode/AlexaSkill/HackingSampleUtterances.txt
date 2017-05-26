@@ -12,14 +12,19 @@ HTMLEncodingIntent HTML encoding for {CHARItem}
 HTMLEncodingIntent HTML for {CHARItem}
 HTMLEncodingIntent what is the HTML for {CHARItem}
 WebHeadersIntent what is web header {WHItem}
+WebHeadersIntent what is the web header {WHItem}
 WebHeadersIntent what is the {WHItem} web header
 WebHeadersIntent what does web header {WHItem} do
 WebHeadersIntent tell me about web header {WHItem}
 WebHeadersIntent what does header {WHItem} do
+WebHeadersIntent what does web header {WHItem} do
+WebHeadersIntent what does the web header {WHItem} do
+WebHeadersIntent what does the HTTP header {WHItem} do
 WebHeadersIntent tell me about header {WHItem}
 WebHeadersIntent what does HTTP header {WHItem} do
 WebHeadersIntent tell me about HTTP header {WHItem}
 WebHeadersIntent what does HTTP header {WHItem} do
+WebHeadersIntent what does the HTTP header {WHItem} do
 WebHeadersIntent what HTTP header is {WHItem}
 WebHeadersIntent what does the {WHItem} header do
 WebHeadersIntent what does the {WHItem} web header do
@@ -275,3 +280,7 @@ KnownPortsIntent what service runs on UDP port number {NUMItem}
 KnownPortsIntent what services run on UDP port number {NUMItem}
 KnownPortsIntent what services run on UDP port {NUMItem}
 KnownPortsIntent what is port {NUMItem} UDP
+HTTPResponseIntent what is the HTTP response code {RCItem}
+HTTPResponseIntent what is the response code {RCItem}
+HTTPResponseIntent what is HTTP response code {RCItem}
+HTTPResponseIntent what is the {RCItem} response code

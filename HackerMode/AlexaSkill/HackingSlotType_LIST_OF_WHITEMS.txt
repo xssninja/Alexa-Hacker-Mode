@@ -50,8 +50,8 @@ server
 set cookie
 set cookie two
 strict transport security
-T.E.
-T.K.
+t. e.
+t. k.
 trailer
 transfer encoding
 upgrade insecure requests
