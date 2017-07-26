@@ -1,0 +1,56 @@
+The problem:
+============
+You'll find that the typed input is not very accurate as "test" input because Alexa converts what you 
+say to text that may be a bit different than what you expect. For example: acronyms like HTTP may 
+be translated to h. t. t. p. once converted from your voice input. 
+
+So the best way to test is with audio.
+The Alexa skill testing page lets you create audio of something that's typed out. So why not use that as
+a test for your skill!? But how? 
+
+The solution:
+=============
+Record a bunch of Alexa's spoken audio of what you type in... Use Alexa to test Alexa!
+Type what phrase you want to test and if you go into Inspect mode of the browser by right clicking on the
+browser page and selecting "Inspect" you can tailor the Inspect mode to look for "media" type data.
+
+You may need to do some adjusting of the browser window to get the split area adjusted to where you 
+can see what URLs are being loaded.
+
+Once you see the links to the audio that was just created as a result of playing your phrase throught the
+voice simulator, just right click the link (a big string of random letters and numbers) and pick 
+"Copy" and pick sub item "Copy Response". That will give you a really long data URL. Paste that URL
+into a browser window and it will play the audio contained! Better still, you now get a download 
+arrow (if in Chrome) and you can download the audio to your computer for playback later.
+
+The problem that results from the solution to the first problem:
+================================================================
+Windows is lame and doesn't know how to play that type of MP3 file even though Chrome does. (stupid huh?)
+So now you have a bunch of totally useless MP3 files that won't play.
+
+The solution to the problem that results from the solution to the first problem:
+================================================================================
+Download the MP3 converter here: https://ffmpeg.org/download.html
+Unzip the file to a directory you have rights to that preferably doesn't have spaces in the path name!!!
+
+Add the directory to your path temporarily... If you installed it in a directory called C:\Utils\FFMPEG, then
+you could add it to your path with something like:
+
+c:\> path=%path% + c:\Utils\FFMPEG\bin\;
+
+The path command will add it to your path only temporarily and the next time you reboot it will be gone again.
+I do that because I don't like to have a lot of extra crap in my path variable when it's not needed regularly.
+Or, if you don't mind a messier command line you can use the entire path to the ffmpeg program 
+like: c:\Utils\FFMPEG\bin\ffmpeg
+
+Here's the DOS (Windows) version of the command to convert all the *.mp3 files in a directory to out*.mp3
+=====
+
+for %f in (*.mp3) do ( ffmpeg -y -i "%~nf.mp3" -ar 16000 -ab 48k -codec:a libmp3lame -ac 1 "out%~nf.mp3")
+
+=====
+Once converted over you can play back the audio as tests by clicking them. Of course, the audio to invoke
+the skill name and then the audio of whatever phrases you want to test.
+
+You can even use them in a Power-Point or automate the playing of them in whatever way makes you feel like a boss.
+ 

@@ -1,4 +1,4 @@
-(`-').-> (`-')  _           <-.(`-')  (`-')  _   (`-')     <-. (`-')             _(`-')    (`-')  _ 
+﻿(`-').-> (`-')  _           <-.(`-')  (`-')  _   (`-')     <-. (`-')             _(`-')    (`-')  _ 
  (OO )__  (OO ).-/  _         __( OO)  ( OO).-/<-.(OO )        \(OO )_      .->  ( (OO ).-> ( OO).-/ 
 ,--. ,'-' / ,---.   \-,-----.'-'. ,--.(,------.,------,)    ,--./  ,-.)(`-')----. \    .'_ (,------. 
 |  | |  | | \ /`.\   |  .--./|  .'   / |  .---'|   /`. '    |   `.'   |( OO).-.  ''`'-..__) |  .---' 
@@ -20,9 +20,12 @@ GOOD! You haven't been scared off yet. Keep reading if you dare...
 =================
 The origin story \
 ======================================================================================================
-This project was created for myself as a means for assisting me in my day to day work. I'm a full time red-team hacker and recently I was told by my doc that I was going to lose some significant eye sight. I wanted to immortalize some things I know, and also build some general tools into Alexa while I can still see a bit better so I don't have to have a Google window always open while I'm working... and Alexa works well for asking and answering quick questions. As you may note, I went way beyond quick questions, but one does that when they're trying to take over the world.  Alexa is also handy for a little-known ability to send "card" data, or a little text version of what it answers for you which is nice for getting syntax detail that doesn't quite come across easily in speech. Rumor has it the new Echo's will have a screen on the front so cards will be displayed there as well as in the Alexa app.
+This project was created for myself as a means for assisting me in my day to day work. I'm a full time red-team hacker and recently I was told by my doc that I was going to lose some sight in one eye. It made me think, wow, it would probably be
+useful to build some general tools into Alexa so I don't have to have a Google window always open while I'm working... and Alexa works well for asking and answering quick questions. As you may note, I went way beyond quick questions, but one does that when they're trying to take over the world.  Alexa is also handy for a little-known ability to send "card" data, or a little text version of what it answers for you which is nice for getting syntax detail that doesn't quite come across easily in speech. Rumor has it the new Echo's will have a screen on the front so cards will be displayed there as well as in the Alexa app.
 
-For what it's worth, I don't know if this project will ultimately make up for my new limitation but it sure is handy for working on web related hacks. I want to expand it far beyond that... Eventually, I want to be able to ask it to hack things for me. While I have plans for how to achieve that, it's something I would welcome help on.
+I want to use it for more than just a sytax helper though, I want to expand it way, way beyond that... Eventually, I want to be able to ask it to hack things for me. While I have laid the groundwork for the crypto and CNC and authentication and linux scripting, it's something I would welcome help on.
+
+Think... "I took the liberty of looking up that IP for you on Shodan, and pulled headers and cyphers. I found some interesting things... would you like to know the details? Or would you rather I sent that host to Metasploit?"
 
 USE YOUR AMAZON ACCOUNT FOR DEV AND TESTING
 One thing you should know before you proceed is that when you create an Alexa skill, it is not immediately published for the world, but is tied to your account. So USE YOUR ALEXA login, or whatever account you use to connect your Alexa as the account for the Alexa skill or your Alexa will never see the skill in her skill list.  By using the same login as you use for you Alexa account, you will automatically give any Alexa devices signed in with that same account access to the skill that you are building. For example: My family uses one account for our main Alexa (my Wife's account) and I use my Amazon account for Alexa skills development, Lambda development, and to connect my Tap and to connect my watch - so the Hacker Mode skill is automatically available on my devices but NOT on the family devices.
@@ -51,14 +54,36 @@ Hacker Mode is a collection of Node.JS code and JSON that builds two important p
 2) The Lambda expression is currently composed of only one file:
 	Hacking.js which is your Lambda expression that will respond to Alexa voice requests.
 
-==============
-App Structure \
+==============================
+App Structure and First Steps \
 ======================================================================================================
 I have broken out the files into Two directories to match the basic structure (Lambda and AlexaSkill)  The interesting thing is that these two pieces of an Alexa app are in fact created and tested IN TWO SEPARATE WEB SITES!  
 
+******************************************************************************************************
 You create your Alexa Skill in: https://developer.amazon.com/edw/home.html#/skill/
-and create your Lambda expression in: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/
+  Log in there create an Alexa function named HackerMode
+  Enable the Beta Skill builder
+  In the SkillBuilder portion of the web site click on the "code" and paset in the HackerModeIntents.json contents into the coding area.
+  Save and Build the "Intent"
 
+And create your Lambda expression in: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/
+  Log in there (should be the same account email and password)
+  Create a Lambda expression using a template for a JSON Alexa app (I think it's the color picker example)
+  Paste in the Hacking.js contents and name your function fnHackerMode or whatever.
+  Make sure your function has a role set for it. (AWS guides you through creating a basic role to run it)
+
+You have to make sure the ARN for the Lambda is entered into the Alexa Skill web site configuration for the skill portion.
+That will help the skill's invocation go to the right place at AWS.
+
+Once you have built your skill and connected it to the Lambda be sure to get the Alex app on your smart-phone, log into it, and under "my skills" add your newly minted skill. That enables it on your device or devices that exist under that
+account. (Again, note, the account apparently has to be the same as the account you use to log into Alexa and into your
+lambda and skills web sites. If not, your skill will exist but will not show up in the Alexa configuration app.) 
+  
+These instructions may vary from day to day as they are constantly changing and adding things. There are some good
+YouTube videos on how to create and run a skill if you get stuck.
+
+  
+*************************************************************************************************************
 I recommend before you start on your road to Alexa skill building that you use one of their built-in samples to get an idea of how it works. Bookmark both sites as you'll have them open a lot during development and you'll be cutting and pasting code into the sites. 
 
 ================
@@ -73,15 +98,12 @@ This one is not too bad:
 https://www.pluralsight.com/guides/node-js/amazon-alexa-skill-tutorial
 
 
-When you start your Alexa it will pick up the list of skills from your account on the skills web site. The Intents, utterances and lists of items tells Alexa how to assemble a JSON request that can be consumed and translated into something useful by the Lambda "program". Basically, when a request comes in, the Lambda server "wakes" the lambda logic and "runs" it on the incoming JSON. If the Intent is one that it has a function handler for, it will try to match the ITEM that comes in to a list of items in the lambda code and respond with whatever the prescribed answer is for that combination of INTENT and ITEM.
+When you start your Alexa it will pick up the list of skills from your account on the skills web site. The Intents, utterances in the JSON file tells Alexa how to assemble a JSON request that can be consumed and translated into something useful by the Lambda "program". Basically, when a request comes in, the Lambda server "wakes" the lambda logic and "runs" it on the incoming JSON. If the Intent is one that it has a function handler for, it will try to match the ITEM that comes in to a list of items in the lambda code and respond with whatever the prescribed answer is for that combination of INTENT and ITEM.
 
 To shed more light on this: If you want Alexa to be able to answer the question "who's the greatest {talent} of all time?" you would break that down into an INTENT called: "TheGreatest"
 You'd create a list of things to fill in the blank with ... like: hockey player, hacker, singer
-<<<<<<< HEAD
-You'd create a set of sample utterances that look basically like: Who is the greatest {talent_list} of all time, or Who's the best {talent_list}, or Who is the most epic {talent_list} of all time.  Once you have those lists, you can drop them into your Alexa Skill configuration. Then you'd tailor your Lambda expression code to match the {talent_list} named items like: hacker, singer, hockey player to your list of responses in your lambda's JavaScript code.  In Hacker Mode I use a “database” built out of JSON objects and I have a row named for each possible option that includes a speech response and sometimes even also includes a text response.
-=======
-You'd create a set of sample utterances that look basically like: Who is the greatest {talent_list} of all time, or Who's the best {talent_list}, or Who is the most epic {talent_list} of all time.  Once you have those lists, you can drop them into your Alexa Skill configuration. Then you'd tailor your Lambda expression code to match the {talent_list} named items like: hacker, singer, hockey player to your list of responses in your lambda's JavaScript code.  In this case I do it with a database built out of JSON objects and I have a row named for each possible option that includes a speech response and sometimes even also includes a text response.
->>>>>>> origin/master
+
+You'd create a set of sample utterances using the Beta Skill Builder in the Alexa Skill web site. Then you'd tailor your Lambda expression code to match the {talent_list} named items like: hacker, singer, hockey player to your list of responses in your lambda's JavaScript code.  In this case I do it with a database built out of JSON objects and I have a row named for each possible option that includes a speech response and sometimes even also includes a text response.
 
 Anyway, peek through the code and it will start making sense.  It really comes together once you've set up one of Amazon's provided demo projects like Favorite Color.
 
@@ -89,11 +111,7 @@ Anyway, peek through the code and it will start making sense.  It really comes t
 Further in Depth\
 ======================================================================================================
 
-<<<<<<< HEAD
-The heart of the Lambda expression is basically a program inside of a JSON object. Which is weird but bear with me. (We live in a JavaScript world) JSON, for those that aren't familiar is a basically a less wordy version of XML. And as such, it can hold data in various forms.
-=======
 The heart of the Lambda expression is basically a program inside of a JSON object. Which is weird but bear with me. (We live in a JavaScript world)  JSON, for those that aren't familiar is a basically a less wordy version of XML. And as such, it can hold data in various forms.
->>>>>>> origin/master
 
 The goal of the Lambda expression is to provide a means of accessing your answer data that Alexa will speak back, and to trip a function of the program or a "handler" to handle a specific INTENT type. So, going back to the example of the "TheGreatest" intent example, you'd have a function in Javascript within the Lambda expression that is tagged with that intent name. As the Lambda interpreter loads your expression and tries to match what is being asked with possible responses it sees there's a match and fires the logic of your function to respond to the incoming INTENT type and ITEM type. In this case INTENT is "TheGreatest" and ITEM is "hockey player". Your Lambda expression function will then look up in a data structure the answer for that query which is "Wayne Gretzky".
 
@@ -113,6 +131,10 @@ Mostly done are:
  HTTP Headers lookup
  HTTP Verbs lookup
  TCP/UDP Ports (common)
+ IP Lookup (GeoLoc)
+ Rick Rolling 
+
+ Upgrading the intent code to support the new Beta skill builder capability
 
 ======================
 What Needs to Be Done \ 
@@ -124,6 +146,7 @@ I want to finish:
  IP to IntegerIP value conversions 
  Powershell goodies
  WMIC commands
+ Shodan lookup for an IP
  Lin/Win commands for basic user creation and system management
  *commands for every decent hacker tool out there like nCat an upgraded netcat with HTTPS support
  *commands for "living off the land" like creating a web server using OpenSSL :)
@@ -163,7 +186,6 @@ Ok, I know it was kind of a controversial thing to put in a serious license inst
 
 @10rdV4d3r
 David Cross 
-https://www.linkedin.com/in/davidcross/
 superdave.cross@gmail.com
 
 

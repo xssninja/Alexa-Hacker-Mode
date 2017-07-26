@@ -682,20 +682,26 @@ provided by Amazon.com, Inc. or its affiliates, including
 Amazon Web Services, Inc.
 
 * Use Limitation. Skills made based on this project or any portion of it may 
-not be registered with Amazon to compete with this skill. Permission may be 
-obtained to make derivative products and registering them for use with Amazon 
-for use with Alexa if: a) the product doesn't compete or contain the same or 
-similar skills b) and it does not have a substantially similar invocation name 
-to 'hacker mode' and c) and if permission is obtained from David Cross via
-an email to superdave.cross@gmail.com and acknowledgement and expressed permission
-for the stated project as described in your email to him. David will make an 
-effort to not unreasonably withhold permission to create derivative works 
-given the limitations stated. 
+not be registered with Amazon to compete with this skill. You may make derivative 
+products for use with Alexa if: a) the product does NOT compete in subject matter
+(hacking and or hacking related encodings, scanning or automatic or guided hacking) 
+b) and it does NOT have a substantially similar invocation name to 'hacker mode' 
+You are allowed to work on this project for your own personal use and add as many 
+features and capabilities as you would like.  However, you are encouraged to post
+your changes and additions for the community to benefit from so they can be added
+to the public skill. Whatever features make it into the public release 
+(soon-to-be certified) skill will be features that don't allow people to conduct 
+questionable or illegal scans. Other versions will forked for private use which 
+may allow expanded capabilities. Users may use or extended those versions, they
+may extend or build dangerous capabilities into their own copy, but always 
+at their own risk. Inappropriate use such as repeated requesting of functions that
+contact web sites or services, and may or may not create burdensome traffic, or other
+harmful effects, is always the responsibility of the user and or developer using
+the product and it's normal or expanded features.
 
 By using this, or any portion of the software as a basis for a product, 
 you agree to the terms of this license and the Use Limitations as specified. 
 If the GPL appears to conflict with the Use Limitations, the Use Limitations 
-supercede the portions of the GPL that conflict.
-
-
+supercede the portions of the GPL that conflict. If any portion is found unenforceable
+the remainder will be considered to be in-force.
 
