@@ -1,6 +1,6 @@
 'use strict';
-const APP_ID = "amzn1.ask.skill.3a1d52fe-5543-42d0-b07c-1b3d0204a3dc"; // TODO replace with your app ID if customizing your own copy.
-               
+const APP_ID = ""; // TODO replace with your skill ID that starts with something like: "amzn1.ask.skill.{and other hex and numeric data here}"
+					// you'll get a log warning with no ID but it should work for testing. 
 const Alexa = require('alexa-sdk');
 //const http = require('http');
 //var Data = require("./data");
@@ -1410,7 +1410,7 @@ const handlers = {
             this.attributes.repromptSpeech = this.t('METASPLOIT_REPEAT_MESSAGE');
             this.emit(':askWithCard', metasploit.speech, this.attributes.repromptSpeech, cardTitle, metasploit.card);  // set the card output to the card item sub type
         } else {
-            let speechOutput = this.t('METAPSLOIT_NOT_FOUND_MESSAGE');
+            let speechOutput = this.t('METASPLOIT_NOT_FOUND_MESSAGE');
             const repromptSpeech = this.t('METASPLOIT_NOT_FOUND_REPROMPT');
             if (itemName) {
                 speechOutput += this.t('METASPLOIT_NOT_FOUND_WITH_ITEM_NAME', itemName);
@@ -1969,10 +1969,10 @@ const languageStrings = {
 			
 			METASPLOIT_REPEAT_MESSAGE: "Try saying repeat to hear that again.",
             METASPLOIT_NOT_FOUND_MESSAGE: "I didn't understand your question. ",
-            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the Meta sploit command for %s ",
-            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that Meta sploit function ",
+            METASPLOIT_NOT_FOUND_WITH_ITEM_NAME: "I can't find the Metasploit command for %s ",
+            METASPLOIT_NOT_FOUND_WITHOUT_ITEM_NAME:  "I don't know that Metasploit function ",
             METASPLOIT_NOT_FOUND_REPROMPT: "What else can I help with? ",
-            METASPLOIT_DISPLAY_CARD_TITLE: "The Metaploit command for %s",
+            METASPLOIT_DISPLAY_CARD_TITLE: "The Metasploit command for %s",
 			
 			RESPONSECODES_REPEAT_MESSAGE: "I can repeat that response code info for you again if you say repeat.",
             RESPONSECODES_NOT_FOUND_MESSAGE: "Hmm, not sure what you just said. ",
