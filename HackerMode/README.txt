@@ -11,9 +11,9 @@ WELCOME TO HACKER MODE, the Amazon(tm) Echo(tm) "Alexa(tm)" skill designed just 
 
 I hope you will join in being one of the creators that makes Hacker Mode take over the world and hack it at the same time...
 
-THIS PROJECT CREATES AN AMAZON ALEXA SKILL APP. So you can say "Alexa, hacker mode!" and then ask her a series of questions about encodings, or command line help for programs like Metasploit(tm), Nmap, NetCat. Like: "How do you do a services fingerprint scan with Nmap?" Or "What is the HTML encoding for double-quote?" etc. 
+THIS PROJECT CREATES AN AMAZON ALEXA SKILL APP. So you can say "Alexa, hacker mode" and then ask her a series of questions about encodings, or command line help for programs like Metasploit(tm), Nmap, NetCat. Like: "How do you do a services fingerprint scan with Nmap?" Or "What is the HTML encoding for double-quote?" etc. 
 
-The app will be submitted for free public use, but if you want to use it now, or contribute to it, you need to create an Alexa Skills account to put the speech definitions in, and a AWS account for the program logic. And of course, you'd need to have a Tap, Dot, Echo or CoWatch watch. The links will be provided below for the Amazon sites.
+The app will be submitted for free public use, but if you want to use it now, or contribute to it, you need to create an Alexa Skills developer account to put the skill invocation examples JSON, and a AWS account for the program logic in the form of a NodeJS app encapsulated in JSON for Lambda. And of course, you'd need to have a Tap, Dot, Echo or CoWatch watch. The links will be provided below for the Amazon sites.
 
 GOOD! You haven't been scared off yet. Keep reading if you dare...
 
@@ -23,7 +23,7 @@ The origin story \
 This project was created for myself as a means for assisting me in my day to day work. I'm a full time red-team hacker and recently I was told by my doc that I was going to lose some sight in one eye. It made me think, wow, it would probably be
 useful to build some general tools into Alexa so I don't have to have a Google window always open while I'm working... and Alexa works well for asking and answering quick questions. As you may note, I went way beyond quick questions, but one does that when they're trying to take over the world.  Alexa is also handy for a little-known ability to send "card" data, or a little text version of what it answers for you which is nice for getting syntax detail that doesn't quite come across easily in speech. Rumor has it the new Echo's will have a screen on the front so cards will be displayed there as well as in the Alexa app.
 
-I want to use it for more than just a sytax helper though, I want to expand it way, way beyond that... Eventually, I want to be able to ask it to hack things for me. While I have laid the groundwork for the crypto and CNC and authentication and linux scripting, it's something I would welcome help on.
+I want to use it for more than just a syntax helper though, I want to expand it way, way beyond that... Eventually, I want to be able to ask it to hack things for me. While I have laid the groundwork for the crypto and CNC and authentication and linux scripting, it's something I would welcome help on.
 
 Think... "I took the liberty of looking up that IP for you on Shodan, and pulled headers and cyphers. I found some interesting things... would you like to know the details? Or would you rather I sent that host to Metasploit?"
 
@@ -36,7 +36,7 @@ What is Hacker Mode? \  (the name of the project and the name to invoke the Alex
 
 Hacker Mode is a collection of Node.JS code and JSON that builds two important pieces of a whole:
 
-1) An Alexa Skill (a set of lists that describe how to talk to a Lamdba expression)
+1) An Alexa Skill (a set of lists that describe how to talk to a Lambda expression)
 2) A Lambda expression (a Java Script that consumes a JSON representing a voice request)
 
 
@@ -63,7 +63,7 @@ I have broken out the files into Two directories to match the basic structure (L
 You create your Alexa Skill in: https://developer.amazon.com/edw/home.html#/skill/
   Log in there create an Alexa function named HackerMode
   Enable the Beta Skill builder
-  In the SkillBuilder portion of the web site click on the "code" and paset in the HackerModeIntents.json contents into the coding area.
+  In the SkillBuilder portion of the web site click on the "code" and paste in the HackerModeIntents.json contents into the coding area.
   Save and Build the "Intent"
 
 And create your Lambda expression in: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/
