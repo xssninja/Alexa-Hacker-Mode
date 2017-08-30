@@ -1,6 +1,6 @@
 'use strict';
-const APP_ID = ""; // TODO replace with your skill ID that starts with something like: "amzn1.ask.skill.{and other hex and numeric data here}"
-					// you'll get a log warning with no ID but it should work for testing. 
+const APP_ID = "amzn1.ask.skill.blahblahblahblahblah"; // TODO replace with your app ID if customizing your own copy.
+               
 const Alexa = require('alexa-sdk');
 //const http = require('http');
 //var Data = require("./data");
@@ -1218,14 +1218,19 @@ const handlers = {
         //console.log(this.event.request.hasOwnProperty('intent'));
         if (this.event.request.hasOwnProperty('intent') === false)
         {
-        this.attributes.speechOutput = welcomeMessage;  
-        //this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
-        // If the user either does not reply to the welcome message or says something that is not
-        // understood, they will be prompted again with this text.
+         this.attributes.speechOutput = welcomeMessage;  
+         // If the user says "Alexa, Hacker Mode" and waits for a response or says something that was not
+         // understood, they will be prompted again with this text.
+         console.log("No intent provided... doing standard random greeting");
+         this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
+         this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
         }
-        this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
-        this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
-        
+        else
+        {
+         //if user says "Ask Hacker Mode what is the blah blah blah" this will redirect to the intent they want
+         console.log("intent:" + this.event.request.intent.name);
+         this.emitWithState(this.event.request.intent.name);
+        }
     },      
 
 	
