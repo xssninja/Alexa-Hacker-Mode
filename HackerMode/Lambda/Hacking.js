@@ -1,7 +1,9 @@
 'use strict';
-const APP_ID = "amzn1.ask.skill.blahblahblahblahblah"; // TODO replace with your app ID if customizing your own copy.
+const APP_ID = ""; // TODO replace with your app ID if customizing your own copy.
                
-const Alexa = require('alexa-sdk');
+const Alexa = require('alexa-sdk'); // AWS is hating on this right now. 
+									// for some reason they are not keeping the SDKs uploaded in the demo
+									// app templates and are blowing them away each time. I'm asking them why.
 //const http = require('http');
 //var Data = require("./data");
 
