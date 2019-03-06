@@ -1,9 +1,19 @@
+/* eslint-disable  func-names */
+/* eslint quote-props: ["error", "consistent"]*/
+/**
+ * This sample demonstrates a sample skill built with Amazon Alexa Skills nodejs
+ * skill development kit.
+ * This sample supports multiple languages (en-US, en-GB, de-GB).
+ * The Intent Schema, Custom Slot and Sample Utterances for this skill, as well
+ * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-howto
+ **/
+
 'use strict';
-const APP_ID = ""; // TODO replace with your app ID if customizing your own copy.
-               
-const Alexa = require('alexa-sdk'); // AWS is hating on this right now. 
-									// for some reason they are not keeping the SDKs uploaded in the demo
-									// app templates and are blowing them away each time. I'm asking them why.
+
+const Alexa = require('alexa-sdk');
+
+const APP_ID = undefined; // TODO replace with your app ID (OPTIONAL).
+
 //const http = require('http');
 //var Data = require("./data");
 
