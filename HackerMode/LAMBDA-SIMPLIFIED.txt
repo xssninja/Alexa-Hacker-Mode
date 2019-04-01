@@ -1,0 +1,20 @@
+Lambda may seem difficult if this is your first build,
+Allow me to break this down into a few simple steps
+
+Step1: create function
+Step2: use a blueprint (( try page 8 (alexa-skill-kit-sdk-howtoskill)))
+create new role
+leave template form alone... didn't select shit
+create
+scroll down
+delete file contents
+copy and paste .js file  contents in its place 
+save on the text editor
+save up top
+copy skill ID from alexa dev console side(found in endpoint )
+add "alexa skills kit" to function
+scroll down 
+paste ID in place and add and save
+copy lambda ID at top of screen
+on alexa dev console go to endpoint and paste the lambda ID in the Default Region form and save endpoint
+DONE!
